@@ -4,7 +4,7 @@ setwd("/home/jvasquez/Documents/Omics/LUAD/2_SGCCA/")
 argms <- list(c)
 cont <- 1
 
-for (i in seq(0, 1, 0.01)){ # seq(0, 1, 0.01) = 0.00, 0.01, 0.02, ..., 0.99, 1.00
+for (i in seq(0.69, 1, 0.01)){ # seq(0, 1, 0.01) = 0.00, 0.01, 0.02, ..., 0.99, 1.00
   argms[[cont]] = rep(i, 3)
   cont <- cont + 1
 }
