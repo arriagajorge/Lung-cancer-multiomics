@@ -1,8 +1,0 @@
-Processing MI calculations for: temp.mtrx ...
-Column Index Name: cg04944812
-ARACNe time: 0 minutes.
-Parameters to join: temp 189 node.list cg04944812
-join ADJ matriz time: 0 minutes.
-Moving adjancy matrix
-Creating SIF: 0 minutes.
-Sorting: 0 minutes.
