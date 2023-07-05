@@ -33,4 +33,4 @@ Copy  matrix gene expression into directory ``launch``:
 
 For run multiple *tsvs*:
 
-``for i in $(ls *.tsv); do bash run.sh $i; done > salida &``
+``bash mult-tsvs.sh``
