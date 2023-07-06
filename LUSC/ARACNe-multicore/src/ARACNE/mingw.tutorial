@@ -1,5 +1,0 @@
-http://mingw-cross-env.nongnu.org/#tutorial
-
-export PATH=/opt/mingw/usr/bin/:$PATH
-
-make CROSS=i686-pc-mingw32- -f Makefile.win
