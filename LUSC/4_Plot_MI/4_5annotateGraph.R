@@ -3,10 +3,10 @@ library(RCy3)
 library(tidyverse)
 ########################PARAMETERS & PACKAGES
 #net=commandArgs(trailingOnly=TRUE)
-net="GO:0001667.LUSC.cys"
-#id=unlist(strsplit(net,'.',fixed=T))[1]
+net="hsa04512.LUSC.cys"
+# id=unlist(strsplit(net,'.',fixed=T))[1]
 #subty=unlist(strsplit(net,'.',fixed=T))[2]
-id="GO:0001667"
+id="hsa04512"
 subty="LUSC"
 
 suppressPackageStartupMessages(library(tidyverse))
@@ -20,7 +20,10 @@ names=data.frame(cbind("name"=V(g)$name,"label"=V(g)$label))
 #######################################3HIGHLIGHT FUNCTIONAL NODES
 #get the cluster that contains the function
 # chosen=read_tsv("../subsamples/chosen.tsv",show_col_types=F)
-chosen=read_tsv("/home/mdiaz/lungsquamouscells/functional_enrichment/bp.enrichment",show_col_types=F)
+chosen_bp=read_tsv("/home/mdiaz/lungsquamouscells/functional_enrichment/bp.enrichment",show_col_types=F)
+chosen_kegg=read_tsv("/home/mdiaz/lungsquamouscells/functional_enrichment/kegg.enrichment", show_col_types=F)
+chosen=rbind(chosen_bp, chosen_kegg)
+
 chosen=chosen%>%filter(ID==id&subtype==subty)
 cl=chosen$group
 funs=chosen$Description
@@ -69,16 +72,11 @@ i=rbind(i,cbind(label=funs,name=funs))
 i2= duplicated(i$name)
 i2= i[!i2, ]
 i=i2
-# i_filtered <- subset(i, grepl("^H|^cg", label) & grepl("^H|^cg", name))
-# i=i_filtered
 V(gk)$label=i$label[order(match(i$name,V(gk)$name))]
 print("Functions net")
 try(createNetworkFromIgraph(gk,"known"))
 #add function annotation
 print("Annotating functional nodes")
-# try(mergeNetworks(c("known", subty),"merged"))
-# try(mergeNetworks(sources=c("known", subty),"merged"))
-# try(mergeNetworks(sources = list("known", subty), name = "merged"))
 try(mergeNetworks(sources = paste("known", subty, sep = ","),title="merged"))
 print("Nice network")
 
@@ -88,6 +86,11 @@ i=selectNodes(nodes=funs,by.col="name",network="merged")$nodes
 setNodeColorBypass(node.names=i,new.colors='#EBEBEB',network="merged")
 #repeated or it will die
 selectNodes(nodes=funs,by.col="name",network="merged")
+# $nodes
+# [1] 2343
+# 
+# $edges
+# [1] 2351 2349
 i=selectEdgesAdjacentToSelectedNodes(network="merged")$edges
 setEdgeLineStyleBypass(edge.names=i,new.styles="EQUAL_DASH")
 
