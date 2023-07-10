@@ -26,10 +26,10 @@ myannot=rbind(myannot,methy)
 sets=lapply(sets,function(x) merge(x,myannot,all.x=T,by="variable"))
 
 #all the transcripts serve for enrichment, some miRNAs & CpGs don't
-# sapply(setsAlt,function(x) table(x$omic[is.na(x$entrezgene_id)]))
-#       Basal Her2  LumA  LumB Normal
-# CpGs   14123 4038 41035 13250  10200
-# miRNAs     6    1    25     7      3
+# sapply(sets,function(x) table(x$omic[is.na(x$entrezgene_id)]))
+# LUSC
+# CpGs    382
+# miRNAs    7
 
 #########################ACTUAL ENRICHMENT#########################
 library(clusterProfiler)

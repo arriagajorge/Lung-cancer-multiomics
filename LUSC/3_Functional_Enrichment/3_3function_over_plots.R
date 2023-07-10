@@ -11,7 +11,6 @@ get_sets=function(enriched_table,exclusive){
   
   #matrix subtypes vs function
   g=table(unique(enriched_table[,c("ID","subtype")]))
-  #g=g[,-1] ####NO normal tissue
   #to get exclusive functions for another time
   if(exclusive==T){
     rowSums(g)
@@ -22,11 +21,6 @@ get_sets=function(enriched_table,exclusive){
   return(sets)}
 
 functions=lapply(enriched,get_sets,exclusive=F)
-
-# we only have 1 subtype
-# pdf("enrichment.pdf",height=5)
-# lapply(functions,function(x) upset(fromList(x),text.scale=1.5,order.by="degree"))
-# dev.off()
 
 ###################EXCLUSIVE FUNCTIONS###########3#################
 KEGGenrich <- k
@@ -71,7 +65,9 @@ table(df$ONTOLOGY[df$GOID%in%ids(slim)])#found all slim ids
 #21 16 16 
 gomap=as.list(GOBPOFFSPRING)#descendents off every goid
 found=names(gomap)[names(gomap)%in%ids(slim)]
-#[1] 21
+# [1] "GO:0000003" "GO:0002376" "GO:0005975" "GO:0006259" "GO:0006629" "GO:0007049" "GO:0007610" "GO:0008283" "GO:0009056"
+# [10] "GO:0012501" "GO:0016043" "GO:0016070" "GO:0019538" "GO:0023052" "GO:0030154" "GO:0032502" "GO:0042592" "GO:0050877"
+# [19] "GO:0050896" "GO:0051234" "GO:1901135"
 sum(found%in%df$GOID[df$ONTOLOGY=="BP"])
 #[1] 21 #actually only descendents of BP goids
 gomap=gomap[names(gomap)%in%ids(slim)]
