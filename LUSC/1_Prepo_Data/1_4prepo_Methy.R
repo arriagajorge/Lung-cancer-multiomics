@@ -4,12 +4,6 @@ library(data.table)
 
 subtypeLUSC=read.table("subtypeLUSC.tsv",header=T,sep='\t')
 #get the data
-# mthyltn2 <-  GDCquery(project = "TCGA-LUSC",
-#                      data.category = "DNA Methylation",
-#                      platform="Illumina Human Methylation 450",
-#                      barcode=subtypeLUSC$samples)
-# Error in GDCdownload(mthyltn) : 
-#   We can only download one data type. Please use data.type argument in GDCquery to filter results.
 
 mthyltn <-  GDCquery(project = "TCGA-LUSC",
                      data.category = "DNA Methylation",
@@ -17,11 +11,6 @@ mthyltn <-  GDCquery(project = "TCGA-LUSC",
                      platform="Illumina Human Methylation 450",
                      barcode=subtypeLUSC$samples)
 
-# mthyltn <-  GDCquery(project = "TCGA-LUSC",
-#                      data.category = "DNA Methylation",
-#                      data.type = "Masked Intensities",
-#                      platform="Illumina Human Methylation 450",
-#                      barcode=subtypeLUSC$samples)
 # In addition: Warning messages:
 #1: In fread(x, select = 2, stringsAsFactors = F) :
 #  Previous fread() session was not cleaned up properly. Cleaned up ok at the beginning of this fread() call.
@@ -29,13 +18,9 @@ mthyltn <-  GDCquery(project = "TCGA-LUSC",
 
 GDCdownload(mthyltn)
 files=list.files("GDCdata",full.names=T,recursive=T)
-#files=list.files("GDCdata",full.names=T,recursive=T)
 #GDCdownload will download 197 files. A total of X GB
 
 ###############################################
-#methy=do.call(cbind,pbapply::pbsapply(files,function(x) 
-#  fread(x,select=2,stringsAsFactors=F)))
-
 # BiocManager::install("sesameData", force=T)
 # BiocManager::install("sesame", force=T)
 library(sesameData)
@@ -72,7 +57,7 @@ nas=lapply(names(total),function(x)
 i=unique(unlist(lapply(1:2,function(x) which(nas[[x]]<total[x]*.25))))
 methy=methy[i,]
 dim(methy)
-#[1] 417031    75
+#[1] 417322    75
 ############filter noise-prone probes##############################
 #get probes annotation
 annot=fread(files[1])
@@ -91,12 +76,12 @@ annot=annot[order(match(annot$probe,rownames(methy))),]
 #https://docs.gdc.cancer.gov/Data/Bioinformatics_Pipelines/Methylation_LO_Pipeline/
 methy_=methy[annot$Chromosome!="*",]
 nrow(methy_)
-#[1] 417031
+# [1] 0
 
 #polymorphisms may affect DNAm measurements
 methy_grep=methy[grep("rs",rownames(methy),invert=T),]
 nrow(methy_grep)
-#[1] 417031 all values for elements that do not match.
+#[1] 417322 all values for elements that do not match.
 
 #######impute missing data########################################
 library(doParallel)
@@ -108,9 +93,9 @@ methy=lapply(names(total),function(x)
   methy[,designMethy$subtype==x])
 nas=lapply(methy,function(x) rowSums(is.na(x)))
 sapply(nas,max)
-#[1]  5 65 44 67
+# [1] 70  3
 sapply(nas,function(x) sum(x>0))#cell to estimate
-#[1] 20133 32518 28705 33795
+# [1] 44762  1298
 
 #impute missing values
 no_cores=detectCores()-1

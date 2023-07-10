@@ -1,4 +1,5 @@
 setwd("/home/mdiaz/lungsquamouscells/prepo_data/")
+
 library(BiocManager)
 library(SummarizedExperiment)
 library(TCGAbiolinks)
@@ -7,6 +8,7 @@ library(data.table)
 library(tidyverse)
 library(dplyr)
 
+##########SAMPLE IDs PER DATA TYPE#####################
 mthyltnLUSC <-  GDCquery(project = "TCGA-LUSC",
                          data.category = "DNA Methylation",
                          platform="Illumina Human Methylation 450")
@@ -76,8 +78,6 @@ levels(samples_2$subtype) <- c(levels(samples_2$subtype), "normal")
 samples_2 <- samples_2 %>% 
   mutate(subtype = replace(subtype, tissue =="Solid Tissue Normal", "normal"))
 
-#samples_2["subtype"][samples_2["tissue"]=="Solid Tissue Normal"]="Normal"
-
 table(samples_2$subtype)
 # basal classical primitive secretory    normal 
 # 13        27        10        22         3 
@@ -85,7 +85,7 @@ table(samples_2$subtype)
 #delete samples from subtype normal
 samples_2 <- samples_2 %>% 
   mutate(subtype = ifelse(subtype %in% c("basal", "classical", "secretory", "primitive"), "LUSC", subtype),
-         subtype = ifelse(subtype == "5", "normal", subtype))
+         subtype = ifelse(tissue == "Solid Tissue Normal", "normal", subtype))
 
 
 write.table(samples_2,"subtypeLUSC.tsv",sep='\t',quote=F,row.names=F)
@@ -125,21 +125,15 @@ clin <- clin[,c("bcr_patient_barcode","gender",
 samples_2=cbind(samples_2,t(sapply(samples_2$patient,function(x) 
   clin[clin$bcr_patient_barcode==x,2:4])))
 table(clin$gender) 
-#female   male 
-#   280    242
+# female   male 
+# 131    373 
 table(clin$ajcc_pathologic)
-#    Stage I   Stage IA   Stage IB   Stage II  Stage IIA  Stage IIB Stage IIIA Stage IIIB 
-#         5        134        140          1         50         73         74         11 
-# Stage IV 
-# 26
+# Stage I   Stage IA   Stage IB   Stage II  Stage IIA  Stage IIB  Stage III Stage IIIA Stage IIIB   Stage IV 
+# 3         90        152          3         65         95          3         63         19          7 
 table(clin$race)
-# american indian or alaska native                            asian 
-#                                 1                                8 
-# black or african american                     not reported 
-#                       53                               67 
-# white 
-# 393 
-#samples <- samples_2
+# asian black or african american              not reported                     white 
+# 9                        31                       113                       351 
+
 samples_ <- as.matrix(samples_2)
 setwd("/home/mdiaz/lungsquamouscells/prepo_data/")
 write.table(samples_,"subtypeLUSC.tsv",sep='\t',quote=F,row.names=F)

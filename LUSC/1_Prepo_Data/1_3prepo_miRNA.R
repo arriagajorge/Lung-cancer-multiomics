@@ -44,22 +44,21 @@ myannot=myannot[myannot$mirbase_id%in%rownames(mir),]
 #there should not be a length bias
 myannot$length=abs(myannot$end_position-myannot$start_position)
 #discard duplicated entries with the same %CpG
-# > sum(!duplicated(myannot[,2:3]))
+#sum(!duplicated(myannot[,2:3]))
 # [1] 1863
 myannot=myannot[!duplicated(myannot[,2:3]),]
 #there're duplicates with slightly different %CpG & position
 #temp=myannot[myannot$mirbase_id%in%myannot$mirbase_id[duplicated(myannot$mirbase_id)],]
 # summary(colSums(sapply(unique(temp$mirbase_id),function(x)
 # temp$percentage_gene_gc_content[temp$mirbase_id==x])*c(1,-1)))
-#   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-#-1.46000 -0.61000  0.15000 -0.05105  0.37500  1.74000 
+# Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+# -1.4600 -0.4200  0.3300  0.1647  0.5150  1.7400 
 #choose 1 of the duplicates randomly
 myannotAlt=myannot[duplicated(myannot$mirbase_id),]
 myannot=myannot[!duplicated(myannot$mirbase_id),]
 #if the GC bias aint fixed you CAN NOT compare among miRNAs
 
 ##################CHECK BIASES########################################################
-#BiocManager::install("NOISeq")
 library(NOISeq)
 
 noiseqData = NOISeq::readData(data = mir, factor=designExp,
@@ -91,7 +90,6 @@ png("lengthbiasOri.png",width=1000)
 par(mfrow=c(1,2))
 sapply(1:2,function(x) explo.plot(mylenBias, samples = x))
 dev.off()
-#no GC bias nor lengthbias!!!!!!!!
 
 myPCA = NOISeq::dat(noiseqData, type = "PCA", norm = FALSE, 
                     logtransf = FALSE)#check batches
@@ -101,9 +99,10 @@ explo.plot(myPCA, samples = c(1,2), plottype = "scores",
 dev.off()
 mycd = dat(noiseqData, type = "cd", norm = FALSE)#check if normalizations is needed
 table(mycd@dat$DiagnosticTest[,  "Diagnostic Test"])
-#[1] "Warning: 368 features with 0 counts in all samples are to be removed for this analysis."
-#FAILED PASSED 
-#   194      1
+# [1] "Warning: 469 features with 0 counts in all samples are to be removed for this analysis."
+# [1] "Reference sample is: TCGA-18-4721-01A-01T-1442-13"
+# FAILED 
+# 74 
 png("miRcdOri.png")
 explo.plot(mycd,samples=1:10)
 dev.off()
@@ -111,7 +110,7 @@ dev.off()
 #filter low counts
 FilteredMatrix = filtered.data(mir, factor = "subtype",
                                norm = FALSE, method = 1, cpm = 0)
-#206 features are to be kept for differential expression analysis with filtering method 1
+#244 features are to be kept for differential expression analysis with filtering method 1
 #it is expected that in miRNA-seq experiments, the 75th percentile 
 #of the data will be found at only 1 or 2 copies/library [10.1093/bib/bbv019]
 #Drago-García2017 used a minimum of  5  counts  in  at  least  25%
@@ -120,8 +119,8 @@ temp=lapply(unique(designExp$subtype),function(x)   #this was commented
   mir[,colnames(mir)%in%designExp$barcode[designExp$subtype==x]])
 temp1=names(which(table(unlist(sapply(temp,function(x) rownames(x)[rowSums(x>=5)>=ncol(x)*.25])))==5))
 length(temp)
-# [1] 328
-# >1 copy → 594
+# [1] 2
+
 FilteredMatrixAlt=mir[rowSums(mir)>0,]
 
 #TMM, UQ, median & DESEq are similar [10.1186/gb-2010-11-3-r25]
@@ -133,19 +132,16 @@ noiseqData = NOISeq::readData(data = myTMM, factors=designExp)
 mycdTMM = NOISeq::dat(noiseqData, type = "cd", norm = T)
 #mycdTMMAlt = dat(noiseqData, type = "cd", norm = T)
 table(mycdTMM@dat$DiagnosticTest[,  "Diagnostic Test"])
-#FAILED PASSED     #sometimes there are changes in the values for example 4 to 2 in failed
-#   4     191
-#table(mycdTMMAlt@dat$DiagnosticTest[,  "Diagnostic Test"])
-#[1] "Diagnostic test: PASSED."
-#explo.plot(mycdTMMAlt,samples=1:10)#non-comparable samples at plot
+# PASSED 
+# 74 
 
 myUQ=uqua(FilteredMatrix,lc=0)
 noiseqData = NOISeq::readData(data = myUQ, factors=designExp)
 mycdUQ = NOISeq::dat(noiseqData, type = "cd", norm = T)
 table(mycdUQ@dat$DiagnosticTest[,  "Diagnostic Test"])
 # FAILED PASSED 
-# 11     63 
-#BiocManager::install("EDASeq")
+# 10     64 
+
 library(EDASeq)
 mydataEDA <- newSeqExpressionSet(
   counts=as.matrix(FilteredMatrix),
@@ -157,12 +153,8 @@ noiseqData = NOISeq::readData(data = assayData(norm.counts)$normalizedCounts,
 mycdMedian = NOISeq::dat(noiseqData, type = "cd", norm = T)
 table(mycdMedian@dat$DiagnosticTest[,  "Diagnostic Test"])
 # FAILED PASSED 
-# 18     56 
-# what happened with LUSC add or not its a sum?
+# 14     60 
 
-#install.packages('Paquetes/DESeq_1.34.1.zip', repos = NULL, type="win.binary")
-#installed from local zip  downloaded from bioconductor source package
-# https://bioconductor.riken.jp/packages/3.8/bioc/html/DESeq.html 
 #if (!requireNamespace("BiocManager", quietly = TRUE))
 #  install.packages("BiocManager")
 #BiocManager::install("DESeq2")
@@ -177,24 +169,12 @@ dds <- estimateSizeFactors(dds)
 
 write.table(FilteredMatrix, "FiltermatrixLUSC.tsv", sep ="\t", quote=F)
 
-##############################################################################
-###Las siguientes lineas se usan solo si se  cuenta con la version DESeq####
-##############################################################################
-
-#deseqFactors=estimateSizeFactors(newCountDataSet(FilteredMatrix,
-#                                                 conditions=designExp))
-#deseqFactors=estimateSizeFactors(DESeqDataSetFromMatrix(newFilteredMatrix, colData = designExp))
-##############################################################################
-########Se dejan como comentarios para evitar que corran######################
-##############################################################################
-
-
 myDESEQ=counts(dds,normalized=T)
 noiseqData = NOISeq::readData(data = myDESEQ, factors=designExp)
 mycdDESEQ = NOISeq::dat(noiseqData, type = "cd", norm = T)
 table(mycdDESEQ@dat$DiagnosticTest[,  "Diagnostic Test"])
-#FAILED PASSED 
-#     2   193
+# FAILED PASSED 
+# 1     73 
 
 png("miRcd_final.png")
 explo.plot(mycdMedian,samples=1:10)
@@ -203,17 +183,17 @@ dev.off()
 #############################SOLVE BATCH EFFECT#######################################################
 noiseqData = NOISeq::readData(data = assayData(norm.counts)$normalizedCounts,
                               factors=designExp)
-# myPCA = NOISeq::dat(noiseqData, type = "PCA", norm = T,logtransf=F)#log=F or points'll fall in angle
-# png("miRPCA_preArsyn.png")
-# explo.plot(myPCA, samples = c(1,2), plottype = "scores", 
-#            factor = "subtype")
-# dev.off()
-# nobatch=ARSyNseq(noiseqData, factor = "subtype", batch = F,
-#                  norm = "n",  logtransf=F)#log=F or dots'll collapse
+myPCA = NOISeq::dat(noiseqData, type = "PCA", norm = T,logtransf=F)#log=F or points'll fall in angle
+png("miRPCA_preArsyn.png")
+explo.plot(myPCA, samples = c(1,2), plottype = "scores",
+           factor = "subtype")
+dev.off()
+nobatch=ARSyNseq(noiseqData, factor = "subtype", batch = F,
+                 norm = "n",  logtransf=F)#log=F or dots'll collapse
 
 #############################FINAL QUALITY CHECK#######################################################
-# noiseqData = NOISeq::readData(data = exprs(nobatch), 
-#                               factors=designExp)
+noiseqData = NOISeq::readData(data = exprs(nobatch),
+                              factors=designExp)
 mycountsbio = NOISeq::dat(noiseqData, type = "countsbio",factor = "subtype")#check low counts
 png("miRFinal.png")
 explo.plot(mycountsbio, plottype = "boxplot",samples = 1:2)
@@ -221,11 +201,11 @@ dev.off()
 png("miRcountsFinal.png")
 explo.plot(mycountsbio, plottype = "barplot", samples = 1:2)
 dev.off()
-# myPCA = NOISeq::dat(noiseqData, type = "PCA", norm = T,logtransf=F)#check batches
-# png("miRPCA_Final.png")
-# explo.plot(myPCA, samples = c(1,2), plottype = "scores", 
-#            factor = "subtype")
-# dev.off()
+myPCA = NOISeq::dat(noiseqData, type = "PCA", norm = T,logtransf=F)#check batches
+png("miRPCA_Final.png")
+explo.plot(myPCA, samples = c(1,2), plottype = "scores",
+           factor = "subtype")
+dev.off()
 #############################RESOLVE DUPLICATES & SAVE##################################################
 miRfinal=assayData(norm.counts)$normalizedCounts
 #get duplicated index
@@ -239,17 +219,11 @@ prefi=miRfinal[,!colnames(miRfinal)%in%unlist(i)]
 #average duplicates
 temp=do.call(cbind,lapply(i,function(x) 
   rowMeans(duplis[,colnames(duplis)%in%x])))
-#identify samples with barcode 
-
-########Temp es de una dimensión por lo que el análisis no podra correr########
-#colnames(temp)=designExp$samples[duplicated(designExp$samples)]
-###############################################################################
-
 colnames(prefi)=substr(colnames(prefi),1,19)
 #joint matrices
 final=cbind(prefi,temp)
 dim(final)
-#[1] 250  72
+# [1] 244  75
 final=final[,order(match(colnames(final),subtypeLUSC$barcode))]
 write.table(final,"miRNAseqNormi.tsv",sep='\t',quote=F)
 

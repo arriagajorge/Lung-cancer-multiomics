@@ -47,9 +47,6 @@ colnames(fpkm_unstrandLUSC) <- expreLUSCT@colData@rownames
 colnames(fpkm_uq_unstrandLUSC) <- expreLUSCT@colData@rownames
 
 write.table(unstrandedLUSC, "RNAseqLUSC.tsv", sep = '\t', quote = F)
-#stranded_firstLUSC <- cbind(gene_id = expreLUSC$gene_id[1:60660], stranded_firstLUSC)
-#stranded_firstLUSC <- cbind(gene_name = expreLUSC$gene_name[1:60660], stranded_firstLUSC)
-#stranded_firstLUSC <- cbind(gene_type = expreLUSC$gene_type[1:60660], stranded_firstLUSC)
 
 # subtype to duplicates #one only
 i = substr(colnames(unstrandedLUSC), 1, 19)
@@ -76,7 +73,6 @@ fpkm_unstrandLUSC <- add_gene_info(fpkm_unstrandLUSC)
 fpkm_uq_unstrandLUSC <- add_gene_info(fpkm_uq_unstrandLUSC)
 
 dim(designExpLUSC)
-# head(i); head(j); length(i); length(j); unique(j)
 
 # keep only tenscript id not version numbers
 rownames(unstrandedLUSC) <- unstrandedLUSC[,"gene_id"]
@@ -97,7 +93,7 @@ myannot=getBM(attributes = c("ensembl_gene_id",
                              "start_position","end_position","hgnc_id","hgnc_symbol"),
               filters = "ensembl_gene_id", 
               values=rownames(fpkm_unstrandLUSC),mart=mart) #its valid for every variable
-#que son los espacios en blanco en my annot??
+
 myannot$length=abs(myannot$end_position-myannot$start_position)
 
 #filter transcripts withouth annotation
@@ -107,14 +103,11 @@ myannot=myannot[!duplicated(myannot$ensembl_gene_id),]
 exprots_hgnc=unstrandedLUSC[rownames(fpkm_unstrandLUSC)%in%myannot$ensembl_gene_id,]
 exprots_hgnc <- exprots_hgnc[,4:ncol(exprots_hgnc)]
 dim(exprots_hgnc)
-#exprots_hgnc[,"gene_id"]
-#[1] 19400    75
 
 ##check duplicated probes
-#myannot[myannot$hgnc_id == myannot$hgnc_id[duplicated(myannot$hgnc_id)],]
 myannot2 <- myannot[unique(rownames(myannot)),]
 dim(myannot2); dim(myannot)
-# > myannot$hgnc_id[duplicated(myannot$hgnc_id)]
+# myannot$hgnc_id[duplicated(myannot$hgnc_id)]
 # [1] "HGNC:30046" "HGNC:11582" "HGNC:33853" "HGNC:4876"  
 which(myannot2$hgnc_id == "HGNC:30046"); which(myannot2$hgnc_id == "HGNC:11582")
 # [1] 18566 18728
@@ -122,9 +115,6 @@ which(myannot2$hgnc_id == "HGNC:30046"); which(myannot2$hgnc_id == "HGNC:11582")
 which(myannot2$hgnc_id == "HGNC:33853"); which(myannot2$hgnc_id == "HGNC:4876")
 # [1] 12080 19340
 # [1]  7581 19375
-#################################################################REVISAR REVISAR
-# > which(!myannot$ensembl_gene_id%in%myannot3$ensembl_gene_id)
-# [1]  7581 18728 19327 19340
 
 myannot2[c(18566,18728),]; myannot2[c(19327,19336),]
 myannot2[c(12080,19340),]; myannot2[c(7581,19375),]
@@ -136,12 +126,7 @@ dim(myannot2); dim(myannot3)
 # length(unique(rownames(stranded_firstLUSC)))
 # [1] 60616
 
-#fpkm_LUSC <- fpkm_unstrandLUSC[unique(rownames(stranded_firstLUSC)),]
-
 ##################CHECK BIASES########################################################
-
-# BiocManager::install("NOISeq")
-# BiocManager::install("edgeR", force = T)
 library(NOISeq)
 library(edgeR)
 
@@ -161,11 +146,13 @@ noiseqData2 = NOISeq::readData(data = exprots_hgnc3,
 
 #1)check expression bias per subtype
 mycountsbio = NOISeq::dat(noiseqData, type = "countsbio", factor = "subtype")
-# [1] "Warning: 249 features with 0 counts in all samples are to be removed for this analysis."
+# [1] "Warning: 200 features with 0 counts in all samples are to be removed for this analysis."
 # [1] "Counts per million distributions are to be computed for:"
-# [1] "normal"        "prox.-inflam"  "prox.-prolif." "TRU"
+# [1] "LUSC"   "normal"
 mycountsbio2 = NOISeq::dat(noiseqData2, type = "countsbio", factor = "subtype")
-
+# [1] "Warning: 200 features with 0 counts in all samples are to be removed for this analysis."
+# [1] "Counts per million distributions are to be computed for:"
+# [1] "LUSC"   "normal"
 
 #patients with repeated measures
 png("CountsOri.png")
@@ -187,7 +174,7 @@ dev.off()
 #Confidence intervals for the M median is computed by bootstrapping.
 #If the median of M values for each comparison is not in the CI, the deviation
 # of the sample is significant, therefore, normalization is needed 
-mycd = dat(noiseqData2, type = "cd", norm = FALSE) #slooooow
+mycd = dat(noiseqData2, type = "cd", norm = FALSE) #slow
 #[1] "Warning: 200 features with 0 counts in all samples are to be removed for this analysis."
 #[1] "Reference sample is: TCGA-18-4721-01A-01R-1443-07"
 # [1] "Diagnostic test: FAILED. Normalization is required to correct this bias."
@@ -225,7 +212,6 @@ explo.plot(myPCA, samples = c(1,2), plottype = "scores",
 dev.off()
 
 #################SOLVE BIASES######################################################
-#BiocManager::install("EDASeq")
 library(EDASeq)
 
 #1) filter low count genes.
@@ -263,26 +249,26 @@ noiseqData = NOISeq::readData(data = fullfullTMM, factors=designExpLUSC)
 mycd=NOISeq::dat(noiseqData,type="cd",norm=TRUE)
 table(mycd@dat$DiagnosticTest[,  "Diagnostic Test"]) #sometimes change values
 # FAILED PASSED 
-# 1     73 
+# 3     71 
 
 #############################SOLVE BATCH EFFECT#######################################################
-# myPCA = dat(noiseqData, type = "PCA", norm = T, logtransf = F)
-# png("preArsyn.png")
-# explo.plot(myPCA, samples = c(1,2), plottype = "scores",
-#            factor = "subtype")
-# dev.off()
-# ffTMMARSyn=ARSyNseq(noiseqData, factor = "subtype", batch = F,
-#                     norm = "n",  logtransf = T)
-# myPCA = dat(ffTMMARSyn, type = "PCA", norm = T,logtransf = T)
-# png("postArsyn22.png")
-# explo.plot(myPCA, samples = c(1,2), plottype = "scores", 
-#            factor = "subtype")
-# dev.off()
-# 
-# # explo.plot(myPCA, samples = c(1,2), plottype = "scores",
-# #            factor = "race")
-# # explo.plot(myPCA, samples = c(1,2), plottype = "scores",
-# #            factor = "gender")
+myPCA = dat(noiseqData, type = "PCA", norm = T, logtransf = F)
+png("preArsyn.png")
+explo.plot(myPCA, samples = c(1,2), plottype = "scores",
+           factor = "subtype")
+dev.off()
+ffTMMARSyn=ARSyNseq(noiseqData, factor = "subtype", batch = F,
+                    norm = "n",  logtransf = T)
+myPCA = dat(ffTMMARSyn, type = "PCA", norm = T,logtransf = T)
+png("postArsyn22.png")
+explo.plot(myPCA, samples = c(1,2), plottype = "scores",
+           factor = "subtype")
+dev.off()
+
+explo.plot(myPCA, samples = c(1,2), plottype = "scores",
+           factor = "race")
+explo.plot(myPCA, samples = c(1,2), plottype = "scores",
+           factor = "gender")
 # #############################FINAL QUALITY CHECK#######################################################
 noiseqData <- NOISeq::readData(data = fullfullTMM, gc = myannot[,1:2],
                                biotype = myannot[,c(1,3)],factor=designExpLUSC,
@@ -318,35 +304,11 @@ prefi=final[,!colnames(final)%in%unlist(i)]
 temp=do.call(cbind,lapply(i,function(x) 
   rowMeans(duplis[,colnames(duplis)%in%x])))
 #identify samples with barcode 
-
-############################
-#Esta función no puede ser utilizada por que "temp" es de una sola dimensión 
-
-#colnames(temp)=designExpLUSC$samples[duplicated(designExpLUSC$samples)]
-
-############################
-
 colnames(prefi)=substr(colnames(prefi),1,19)
 #joint matrices
 final=cbind(prefi,temp)
 dim(final)
-#[1] 10943  193(
+# [1] 11768    75
 final=final[,order(match(colnames(final),subtypeLUSC$samples))]
 dim(myannot3)
-
-# eliminarCerosbyrows <- function(df){
-#   vectorCeros = c()
-#   for (i in 1 : + (dim(df)[1])){
-#     if(df[i,1]==0){
-#       if(sum(df[i,])==0){
-#         vectorCeros <- c(vectorCeros, i)
-#       }
-#     }
-#   }
-#   return(vectorCeros)
-# }
-# 
-# final2 <- final[-eliminarCerosbyrows(final),]
-# dim(final2)
-
 write.table(final,"RNAseqnormalized.tsv",sep='\t',quote=F)

@@ -16,8 +16,8 @@ data=lapply(files,fread)
 data=lapply(data,function(x) as.matrix(x[,2:ncol(x)],rownames=x$V1))
 names(data)=gsub("./multiomicsLUSC/","",files)
 names(data)=gsub(".tsv","",names(data))
-names(data)=gsub("RNAseqnormalized","transcripts",
-                 gsub("miRNAseqNormi","miRNAs",gsub("methyM","CpGs",names(data))))
+names(data)=gsub("RNAseqnormalized_lusc-normal","transcripts",
+                 gsub("miRNAseqNormi_lusc-normal","miRNAs",gsub("methyM_lusc-normal","CpGs",names(data))))
 print(sapply(data,dim))
 #print(sapply(data,function(x) head(rownames(x))))
 
@@ -44,10 +44,10 @@ names(concatenated)=levels(subtypeLUSC$subtype)
 ##########################################matrix per subtype
 concatenated=lapply(concatenated,function(x) do.call(rbind,x))
 print(sapply(concatenated,dim))
-# LUSC
-# [1,] 425596
-# [2,]     75
-lapply(1:1,function(x) write.table(concatenated[[x]],
+# LUSC normal
+# [1,] 429334 429334
+# [2,]     72      3
+lapply(1:2,function(x) write.table(concatenated[[x]],
                                           paste(names(concatenated)[x],"mtrx",sep='.'),sep='\t',quote=F))
 
 ################################ for 1.6
