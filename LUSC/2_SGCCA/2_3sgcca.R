@@ -45,36 +45,6 @@ selected=as.data.frame(do.call(rbind,lapply(selected,function(y)
     cbind(names(y)[x],y[[x]],names(y[[x]])))))))
 colnames(selected)=c("component","final","variable")
 
-# in case you have one feature in some omic
-#df <- data.frame( = c("final", "variable", "comp"))
-# df <- data.frame()
-# 
-# getInfoByOmic <- function(omicList, omic){
-#   df = as.data.frame(omicList[[1]])
-#   
-#   colnames(df) = "final"
-#   df$variable = rownames(df)
-#   df$component = paste0("comp", 1)
-#   
-#   for (i in 2:length(omicList)) {
-#     temp = as.data.frame(omicList[[i]])
-#     colnames(temp) = "final"
-#     temp$variable = rownames(temp)
-#     temp$component = paste0("comp", i)
-#     
-#     df <- rbind.data.frame(df, temp)
-#   }
-#   #df$omic = omic
-#   rownames(df) = NULL
-#   return(df)
-# }
-# 
-# dfCpGs <- getInfoByOmic(selected$CpGs, "CpGs")
-# dftranscripts <- getInfoByOmic(selected$transcripts, "transcripts")
-# dfmiRNAs <- getInfoByOmic(selected$miRNAs, "miRNAs")
-# 
-# selected <- rbind(dfCpGs, dftranscripts, dfmiRNAs)
-
 #####PLOT LOADINGS
 library(ggplot2)
 library(gridExtra)

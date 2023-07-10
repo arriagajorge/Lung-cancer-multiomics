@@ -72,12 +72,6 @@ set.seed(2) #we will to use a seed to replicate results
 index = list()
 for (j in 1:length(files)) {index[[j]] = list()}
 
-## tumor subtypes indexs without replace
-# for(i in 1:length(files)){ # from 1 or 2??
-#   temp_vec <- cut(sample(1:dim(data[[i]])[2]), breaks = 5, labels = F, ordered_result = T)
-#   index[[i]] <- split(1:dim(data[[i]])[2], temp_vec)
-# }
-
 # get indexs of samples for each fold
 for (i in 1:length(files)) {
   len_vec <- sizes[i]

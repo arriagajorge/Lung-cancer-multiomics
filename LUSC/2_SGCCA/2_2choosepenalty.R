@@ -78,13 +78,16 @@ slopes1$transcripts[abs(slopes1$transcripts)=="Inf"]=NA
 penalty=sapply(slopes,function(x) grid[which.max(x)+1])
 penalty1=sapply(slopes1,function(x) grid[which.max(x)+1])
 
+# > penalty
 # CpGs transcripts      miRNAs 
 # 0.03        0.60        0.60 
 
-# Initial penalties 
-# CpGs - 0.03
-# transcripts - 0.60
-# miRNAs - 0.60
+# > penalty1
+# CpGs transcripts      miRNAs 
+# 0.01        0.02        0.11 
+
+
+#CHOOSE penalty1
 
 #######################################PENALTIES SUGGESTED BY PLOTS by SoL
 grid=unique(temp$penalty)

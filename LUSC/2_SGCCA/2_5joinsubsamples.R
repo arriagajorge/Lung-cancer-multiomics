@@ -1,6 +1,5 @@
 setwd("/home/mdiaz/lungsquamouscells/sgcca/selected/")
 library(tidyverse)
-#library(irr)
 
 # subtype=commandArgs(trailingOnly=TRUE)
 subtype="LUSC" 
