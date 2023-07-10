@@ -2,12 +2,12 @@ setwd("~/lungsquamouscells/MI/filteredCys/")
 library(RCy3)
 library(tidyverse)
 ########################PARAMETERS & PACKAGES
-#net=commandArgs(trailingOnly=TRUE)
-net="hsa04512.LUSC.cys"
-# id=unlist(strsplit(net,'.',fixed=T))[1]
-#subty=unlist(strsplit(net,'.',fixed=T))[2]
-id="hsa04512"
-subty="LUSC"
+net=commandArgs(trailingOnly=TRUE)
+id=unlist(strsplit(net,'.',fixed=T))[1]
+subty=unlist(strsplit(net,'.',fixed=T))[2]
+# net="hsa04512.LUSC.cys"
+# id="hsa04512"
+# subty="LUSC"
 
 suppressPackageStartupMessages(library(tidyverse))
 suppressPackageStartupMessages(library(igraph))
@@ -86,11 +86,6 @@ i=selectNodes(nodes=funs,by.col="name",network="merged")$nodes
 setNodeColorBypass(node.names=i,new.colors='#EBEBEB',network="merged")
 #repeated or it will die
 selectNodes(nodes=funs,by.col="name",network="merged")
-# $nodes
-# [1] 2343
-# 
-# $edges
-# [1] 2351 2349
 i=selectEdgesAdjacentToSelectedNodes(network="merged")$edges
 setEdgeLineStyleBypass(edge.names=i,new.styles="EQUAL_DASH")
 

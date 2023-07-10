@@ -1,9 +1,9 @@
 #!/usr/bin/env Rscript
 
-setwd("~/lungsquamouscells/MI/GO_filtered_alt/")
+setwd("~/lungsquamouscells/MI/hsa_filtered_alt/")
 ########################PARAMETERS & PACKAGES
 #net=commandArgs(trailingOnly=TRUE)
-net="GO:0001667.LUSC.filtered.alt"
+net="hsa04512.LUSC.filtered.alt"
 library(igraph)
 library(tidyverse)
 library(biomaRt)
@@ -109,19 +109,4 @@ setNodeSizeMapping(table.column="size",
 clearEdgeBends()
 setwd("/home/mdiaz/lungsquamouscells/MI/filteredCys/")
 saveSession(filename=paste(paste(unlist(strsplit(net,'.',fixed=T))[1:2],collapse='.'),"cys",sep='.'))
-#exportNetwork(gc, file = "Go0001667.filtered.cys")
 #closeSession(FALSE)
-
-#a manita
-#fun=unlist(strsplit(net,".",fixed=T))[1]
-#bp=read_tsv("../BP-allFeatures.enrichment")
-#comp=bp%>%filter(ID==fun)%>%dplyr::select(component)%>%unlist
-#bp=bp%>%filter(subtype==subtype&component==comp)
-#features=unique(unlist(strsplit(unlist(bp[grep("negative",bp$Description),c(5,11)][c(2,3,5),2]),"/")))
-#features=c(features,unlist(strsplit(bp$geneID[bp$Description=="T cell selection"],"/")))
-#features=c(features,unlist(strsplit(bp$geneID[bp$Description=="regulation of adaptive immune response based on somatic recombination of immune receptors built from immunoglobulin superfamily domains"],"/")))
-#selectNodes(features,by="label")
-#selectFirstNeighbors()
-#invertNodeSelection()
-#hideSelectedNodes()
-#
