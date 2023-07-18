@@ -1,4 +1,5 @@
-Para replicar el análisis tanto para LUAD y LUSC, se necesitan ejecutar en orden las carpetas.
+Para replicar el análisis tanto para LUAD y LUSC, se necesitan ejecutar en orden las carpetas:
+
 1. PrepoData.
 2. SGCCA.
 3. functional_enrich.
