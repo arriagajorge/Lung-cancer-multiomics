@@ -8,9 +8,9 @@ la función está sobrerrepresentada. Se obtienen archivos de la forma *funcion.
    1. Copiar las matrices obtenidas al directorio launch.
    2. Tambien copiar los archivos **rename.sh** y **mult-tsvs.sh** al directorio launch.
    3. Ejecutar el archivo **mult-tsvs.sh** con el comando:
-    ```
-    bash mult-tsvs.sh
-    ```
+        ```
+        bash mult-tsvs.sh
+        ```
     Se obtienen archivos de la forma *funcion.LUAD.sort*.
 
 3. Ejecutar el comando:
