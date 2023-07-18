@@ -18,6 +18,7 @@ la función está sobrerrepresentada. Se obtienen archivos de la forma *funcion.
   bash 4_3MI_filter.sh
   ```
   Mantiene sólo las aristas con MI superior a un umbral específico para el tipo de arista. Se obtienen archivos de la forma *funcion.LUAD.filtered.alt*.
+  
 4. Ejecutar el comando
   ```
   bash 4_4plot_graph.sh
