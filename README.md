@@ -1,3 +1,5 @@
+# Lung Cancer Multi-omics
+
 Para replicar el análisis tanto para LUAD y LUSC, se necesitan ejecutar en orden las carpetas:
 
 1. PrepoData.
