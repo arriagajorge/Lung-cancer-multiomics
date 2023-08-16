@@ -1,18 +1,19 @@
-# Preprocesamiento de la información.
+# Information pre-processing.
 
-Para replicar el análists ejecutar en el siguiente orden.
+To replicate the analysis run in the following order.
 
-1. Ejecutar *1_1getData.R*. La principal función de este archivo es cargar la información. El archivo tendra como output principal el archivo $\texttt{subtypeLUAD.tsv}$
+1. Execute *1_1getData.R*. The main function of this file is to load the data. The file will have as main output the file $texttt{subtypeLUAD.tsv}$.
 
-2. Ejecutar *1_2Prepo-mRNA.R*. La principal función de este archivo es procesar los datos mRNA. El archivo tendra como output pricipal el archivo $\texttt{RNAseqnormalized.tsv}$. 
-**Warning** Verificar que la matriz resultante ($\texttt{RNAseqnormalized}$) no tenga filas de ceros.
+2. Execute *1_2Prepo-mRNA.R*. The main function of this file is to process the mRNA data. The file will have as its main output the file $texttt{RNAseqnormalized.tsv}$. 
+**Warning** Verify that the resulting matrix ($\texttt{RNAseqnormalized}$) has no rows of zeros.
 
-3. Ejecutar *1_3prepo-miRNA.R*. La principal función de este archivo es procesar los datos de miRNA. El archivo tendrá como output principal el archivo $\texttt{miRNAseqNormi.tsv}$.
+3. Run *1_3prepo-miRNA.R*. The main function of this file is to process the miRNA data. The file will have as main output the file $texttt{miRNAseqNormi.tsv}$.
 
-4. Ejecutar *1_4prepoMethy.R*. La principal función de este archivo es procesar los datos de Methylation. El archivo tendrá como output principal el archivo $\texttt{MethyM.tsv}$.
+4. Run *1_4prepoMethy.R*. The main function of this file is to process the Methylation data. The file will have as main output the file $texttt{MethyM.tsv}$.
 
-5. Ejecutar *1_5CONCAT_FINAL.R*. La principal función de este archivo es concatenar la información anteriormente obtenida y separala por subtipos. Los outputs principales son $\texttt{normal.MTRX}$, $\texttt{prox.-inflam.MTRX}$, $\texttt{prox.-prolif..MTRX}$, $\texttt{TRU.MTRX}$.
+5. Execute *1_5CONCAT_FINAL.R*. The main function of this file is to concatenate the previously obtained information and separate it by subtypes. The main outputs are $$$texttt{normal.MTRX}$, $$texttt{prox.-inflam.MTRX}$, $$texttt{prox.-prolif..MTRX}$, $$texttt{TRU.MTRX}$.
 
-6. Ejecutar *1_6mfanormi.R*, esto dara como output el archivo $\texttt{LUAD.eigenNormi}$
+6. Execute *1_6mfanormi.R*, this will give as output the file $$texttt{LUAD.eigenNormi}$.
+To replicate the analysis run in the following order.
 
-**Warning** Las librerias $\texttt{NOISeq}$ y $\texttt{data.table}$ tienen ciertos conflictos con las funciones $\texttt{dat}, \texttt{ReadData}$ por lo cual se recomienda verificar que antes de cada una de estas funciones se encuentre ya sea $\texttt{NOISeq::}$ o $\texttt{data.table::}$ antes de ejecutar la respectiva función.
+**Warning** The libraries $texttt{NOISeq}$ and $texttt{data.table}$ have certain conflicts with the functions $texttt{dat}, \texttt{ReadData}$ so it is recommended to verify that before each of these functions there is either $texttt{NOISeq::}$ or $texttt{data.table::}$ before executing the respective function.
