@@ -1,5 +1,5 @@
-Archivos que se deben de ejecutar antes de crear las redes. Aquí el orden de ejecución de los archivos no es importante.
+Files that must be executed before creating the networks. Here the order of execution of the files is not important.
 
-* Ejecutar el archivo *prepoCpG.R*. El output princpal es **MapMethy.tsv**.
-* Ejecutar el archivo *DA.R*. El output princiapl es **DMcpgs.tsv** y **DMcpgs-RUV.tsv**.
-* Ejecutar el archivo *add_groups.R*. Añade cluster a los archivos *.enrichment*.
+* Run the file *prepoCpG.R*. The main output is **MapMethy.tsv**.
+* Execute the *DA.R* file. The main output is **DMcpgs.tsv** and **DMcpgs-RUV.tsv**.
+* Run the *add_groups.R* file. Add cluster to the *.enrichment* files.
