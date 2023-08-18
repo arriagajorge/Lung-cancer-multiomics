@@ -13,7 +13,7 @@ To replicate the analysis run in the following order.
 
 5. Execute *1_5CONCAT_FINAL.R*. The main function of this file is to concatenate the previously obtained information and separate it by subtypes. The main outputs are $\texttt{normal.MTRX}$, $\texttt{prox.-inflam.MTRX}$, $\texttt{prox.-prolif..MTRX}$, $\texttt{TRU.MTRX}$.
 
-6. Execute *1_6mfanormi.R*, this will give as output the file $$texttt{LUAD.eigenNormi}$.
+6. Execute *1_6mfanormi.R*, this will give as output the file $\texttt{LUAD.eigenNormi}$.
 To replicate the analysis run in the following order.
 
 **Warning** The libraries $\texttt{NOISeq}$ and $\texttt{data.table}$ have certain conflicts with the functions $\texttt{dat}$ , $\texttt{ReadData}$ so it is recommended to verify that before each of these functions there is either $\texttt{NOISeq::}$ or $\texttt{data.table::}$ before executing the respective function.
