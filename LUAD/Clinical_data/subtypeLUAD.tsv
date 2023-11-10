@@ -1,0 +1,194 @@
+samples	tissue	patient	subtype	gender	ajcc_pathologic_stage	race
+TCGA-69-7761-01A-11	Primary Tumor	TCGA-69-7761	prox.-inflam	male	Stage IB	white
+TCGA-55-7903-01A-11	Primary Tumor	TCGA-55-7903	prox.-inflam	male	Stage IA	white
+TCGA-69-7760-01A-11	Primary Tumor	TCGA-69-7760	prox.-prolif.	male	Stage IIB	white
+TCGA-38-4632-01A-01	Primary Tumor	TCGA-38-4632	prox.-inflam	male	Stage IV	black or african american
+TCGA-75-5122-01A-01	Primary Tumor	TCGA-75-5122	prox.-inflam	male	Stage IB	not reported
+TCGA-05-5420-01A-01	Primary Tumor	TCGA-05-5420	prox.-inflam	male	Stage IIIA	not reported
+TCGA-44-6147-01B-06	Primary Tumor	TCGA-44-6147	TRU	female	Stage IA	white
+TCGA-50-5933-01A-11	Primary Tumor	TCGA-50-5933	prox.-inflam	male	Stage IIIB	white
+TCGA-55-6971-01A-11	Primary Tumor	TCGA-55-6971	prox.-prolif.	female	Stage IB	white
+TCGA-91-6847-01A-11	Primary Tumor	TCGA-91-6847	prox.-inflam	female	Stage IB	white
+TCGA-64-5778-01A-01	Primary Tumor	TCGA-64-5778	prox.-inflam	male	Stage IB	white
+TCGA-55-6970-01A-11	Primary Tumor	TCGA-55-6970	prox.-prolif.	female	Stage IIIA	white
+TCGA-55-7726-01A-11	Primary Tumor	TCGA-55-7726	prox.-inflam	female	Stage IA	white
+TCGA-50-7109-01A-11	Primary Tumor	TCGA-50-7109	prox.-prolif.	male	Stage IA	white
+TCGA-99-7458-01A-11	Primary Tumor	TCGA-99-7458	TRU	female	Stage IIIA	white
+TCGA-50-6673-01A-11	Primary Tumor	TCGA-50-6673	TRU	female	Stage I	white
+TCGA-44-7662-01A-11	Primary Tumor	TCGA-44-7662	prox.-inflam	male	Stage IB	white
+TCGA-95-7039-01A-11	Primary Tumor	TCGA-95-7039	prox.-inflam	female	Stage IIB	white
+TCGA-69-7980-01A-11	Primary Tumor	TCGA-69-7980	TRU	female	Stage I	white
+TCGA-73-4658-01A-01	Primary Tumor	TCGA-73-4658	prox.-inflam	female	Stage IB	white
+TCGA-75-7031-01A-11	Primary Tumor	TCGA-75-7031	prox.-prolif.	female	Stage IB	not reported
+TCGA-78-7158-01A-11	Primary Tumor	TCGA-78-7158	TRU	female	Stage IIIB	white
+TCGA-55-6978-01A-11	Primary Tumor	TCGA-55-6978	prox.-inflam	male	Stage IIA	white
+TCGA-55-6983-01A-11	Primary Tumor	TCGA-55-6983	prox.-prolif.	male	Stage IIB	white
+TCGA-86-7714-01A-12	Primary Tumor	TCGA-86-7714	TRU	female	Stage IIIA	black or african american
+TCGA-75-7027-01A-11	Primary Tumor	TCGA-75-7027	prox.-prolif.	male	Stage IB	not reported
+TCGA-78-7143-01A-11	Primary Tumor	TCGA-78-7143	TRU	female	Stage IB	white
+TCGA-71-6725-01A-11	Primary Tumor	TCGA-71-6725	TRU	female	Stage IB	asian
+TCGA-75-6207-01A-11	Primary Tumor	TCGA-75-6207	prox.-inflam	male	Stage IIIA	not reported
+TCGA-49-6761-01A-31	Primary Tumor	TCGA-49-6761	prox.-inflam	female	Stage IIIA	white
+TCGA-78-7163-01A-12	Primary Tumor	TCGA-78-7163	TRU	male	Stage IB	white
+TCGA-05-5429-01A-01	Primary Tumor	TCGA-05-5429	prox.-prolif.	male	Stage IIIA	not reported
+TCGA-78-7537-01A-11	Primary Tumor	TCGA-78-7537	TRU	male	Stage IB	not reported
+TCGA-55-6979-01A-11	Primary Tumor	TCGA-55-6979	prox.-inflam	female	Stage IIB	white
+TCGA-44-4112-01A-01	Primary Tumor	TCGA-44-4112	prox.-inflam	female	Stage IB	white
+TCGA-49-6767-01A-11	Primary Tumor	TCGA-49-6767	prox.-inflam	female	Stage IIB	white
+TCGA-49-4490-01A-21	Primary Tumor	TCGA-49-4490	TRU	female	Stage IIIA	white
+TCGA-50-5942-01A-21	Primary Tumor	TCGA-50-5942	TRU	female	Stage IA	white
+TCGA-75-6214-01A-41	Primary Tumor	TCGA-75-6214	prox.-prolif.	female	Stage IIIA	not reported
+TCGA-55-6982-01A-11	Primary Tumor	TCGA-55-6982	prox.-inflam	female	Stage IIB	white
+TCGA-55-7724-01A-11	Primary Tumor	TCGA-55-7724	prox.-inflam	female	Stage IB	white
+TCGA-05-5423-01A-01	Primary Tumor	TCGA-05-5423	TRU	male	Stage IIB	not reported
+TCGA-91-6835-01A-11	Primary Tumor	TCGA-91-6835	prox.-inflam	female	Stage IA	white
+TCGA-64-5781-01A-01	Primary Tumor	TCGA-64-5781	prox.-inflam	female	Stage IB	white
+TCGA-53-7813-01A-11	Primary Tumor	TCGA-53-7813	prox.-prolif.	female	Stage IIIB	white
+TCGA-78-7540-01A-11	Primary Tumor	TCGA-78-7540	TRU	female	Stage IB	white
+TCGA-55-7576-01A-11	Primary Tumor	TCGA-55-7576	prox.-inflam	male	Stage IB	black or african american
+TCGA-78-7159-01A-11	Primary Tumor	TCGA-78-7159	prox.-prolif.	female	Stage IA	white
+TCGA-44-6145-01A-11	Primary Tumor	TCGA-44-6145	prox.-inflam	female	Stage IA	white
+TCGA-80-5608-01A-31	Primary Tumor	TCGA-80-5608	prox.-prolif.	female	Stage IA	not reported
+TCGA-78-7535-01A-11	Primary Tumor	TCGA-78-7535	prox.-inflam	male	Stage IB	white
+TCGA-75-7025-01A-12	Primary Tumor	TCGA-75-7025	TRU	male	Stage IB	not reported
+TCGA-05-4424-01A-22	Primary Tumor	TCGA-05-4424	TRU	male	Stage IIB	not reported
+TCGA-55-7914-01A-11	Primary Tumor	TCGA-55-7914	TRU	female	Stage IIA	white
+TCGA-55-7573-01A-11	Primary Tumor	TCGA-55-7573	TRU	female	Stage IA	white
+TCGA-44-6147-01A-11	Primary Tumor	TCGA-44-6147	TRU	female	Stage IA	white
+TCGA-50-5933-11A-01	Solid Tissue Normal	TCGA-50-5933	normal	male	Stage IIIB	white
+TCGA-50-5049-01A-01	Primary Tumor	TCGA-50-5049	prox.-inflam	male	Stage IA	white
+TCGA-05-4384-01A-01	Primary Tumor	TCGA-05-4384	TRU	male	Stage IIIA	not reported
+TCGA-05-4417-01A-22	Primary Tumor	TCGA-05-4417	prox.-prolif.	female	Stage IB	not reported
+TCGA-55-7725-01A-11	Primary Tumor	TCGA-55-7725	TRU	female	Stage IA	white
+TCGA-80-5607-01A-31	Primary Tumor	TCGA-80-5607	TRU	female	Stage IIB	not reported
+TCGA-78-7145-01A-11	Primary Tumor	TCGA-78-7145	prox.-inflam	female	Stage IV	white
+TCGA-05-4425-01A-01	Primary Tumor	TCGA-05-4425	prox.-inflam	female	Stage IV	not reported
+TCGA-50-5068-01A-01	Primary Tumor	TCGA-50-5068	prox.-inflam	female	Stage IIB	white
+TCGA-55-7281-01A-11	Primary Tumor	TCGA-55-7281	TRU	female	Stage IA	white
+TCGA-44-6146-01B-04	Primary Tumor	TCGA-44-6146	TRU	male	Stage IIB	white
+TCGA-44-6146-01A-11	Primary Tumor	TCGA-44-6146	TRU	male	Stage IIB	white
+TCGA-50-5072-01A-21	Primary Tumor	TCGA-50-5072	prox.-prolif.	male	Stage IIIA	white
+TCGA-50-5939-01A-11	Primary Tumor	TCGA-50-5939	prox.-inflam	male	Stage IB	white
+TCGA-97-7552-01A-11	Primary Tumor	TCGA-97-7552	TRU	male	Stage IB	white
+TCGA-50-5931-01A-11	Primary Tumor	TCGA-50-5931	prox.-prolif.	female	Stage IB	white
+TCGA-69-7763-01A-11	Primary Tumor	TCGA-69-7763	TRU	male	Stage IA	white
+TCGA-50-5944-01A-11	Primary Tumor	TCGA-50-5944	TRU	female	Stage IA	white
+TCGA-55-7911-01A-11	Primary Tumor	TCGA-55-7911	prox.-inflam	female	Stage IA	white
+TCGA-49-6742-01A-11	Primary Tumor	TCGA-49-6742	prox.-prolif.	male	Stage IIA	white
+TCGA-75-6212-01A-11	Primary Tumor	TCGA-75-6212	TRU	female	Stage IIB	not reported
+TCGA-50-5935-01A-11	Primary Tumor	TCGA-50-5935	TRU	female	Stage IA	white
+TCGA-67-6217-01A-11	Primary Tumor	TCGA-67-6217	TRU	female	Stage IIA	white
+TCGA-78-7162-01A-21	Primary Tumor	TCGA-78-7162	TRU	male	Stage IA	white
+TCGA-91-6829-01A-21	Primary Tumor	TCGA-91-6829	prox.-inflam	male	Stage IB	white
+TCGA-69-7764-01A-11	Primary Tumor	TCGA-69-7764	TRU	male	Stage IA	white
+TCGA-38-4631-01A-01	Primary Tumor	TCGA-38-4631	prox.-prolif.	female	Stage IB	white
+TCGA-97-7546-01A-11	Primary Tumor	TCGA-97-7546	TRU	female	Stage IA	white
+TCGA-75-6211-01A-11	Primary Tumor	TCGA-75-6211	prox.-prolif.	female	Stage IB	not reported
+TCGA-44-6777-01A-11	Primary Tumor	TCGA-44-6777	prox.-inflam	female	Stage IB	white
+TCGA-97-7553-01A-21	Primary Tumor	TCGA-97-7553	TRU	female	Stage IA	white
+TCGA-95-7567-01A-11	Primary Tumor	TCGA-95-7567	prox.-inflam	male	Stage IIB	white
+TCGA-44-6775-01A-11	Primary Tumor	TCGA-44-6775	prox.-inflam	female	Stage IB	white
+TCGA-44-7672-01A-11	Primary Tumor	TCGA-44-7672	prox.-inflam	female	Stage IA	white
+TCGA-55-6986-01A-11	Primary Tumor	TCGA-55-6986	TRU	female	Stage IB	white
+TCGA-78-7633-01A-11	Primary Tumor	TCGA-78-7633	prox.-prolif.	male	Stage IB	white
+TCGA-44-6774-01A-21	Primary Tumor	TCGA-44-6774	prox.-inflam	female	Stage IIIA	white
+TCGA-78-7149-01A-11	Primary Tumor	TCGA-78-7149	prox.-prolif.	male	Stage IIIB	white
+TCGA-55-6980-01A-11	Primary Tumor	TCGA-55-6980	TRU	male	Stage IA	white
+TCGA-44-6775-01C-02	Primary Tumor	TCGA-44-6775	prox.-inflam	female	Stage IB	white
+TCGA-44-2656-01A-02	Primary Tumor	TCGA-44-2656	prox.-inflam	male	Stage IB	white
+TCGA-55-6642-01A-11	Primary Tumor	TCGA-55-6642	prox.-prolif.	male	Stage IB	white
+TCGA-44-2655-11A-01	Solid Tissue Normal	TCGA-44-2655	normal	female	Stage IA	white
+TCGA-55-6981-01A-11	Primary Tumor	TCGA-55-6981	prox.-inflam	female	Stage IIIA	white
+TCGA-05-5428-01A-01	Primary Tumor	TCGA-05-5428	prox.-inflam	male	Stage IIA	not reported
+TCGA-73-4676-01A-01	Primary Tumor	TCGA-73-4676	prox.-inflam	male	Stage IIA	white
+TCGA-49-6744-01A-11	Primary Tumor	TCGA-49-6744	TRU	female	Stage IIA	white
+TCGA-75-5146-01A-01	Primary Tumor	TCGA-75-5146	TRU	male	Stage IB	not reported
+TCGA-86-6851-01A-11	Primary Tumor	TCGA-86-6851	prox.-inflam	female	Stage IIA	white
+TCGA-50-6595-01A-12	Primary Tumor	TCGA-50-6595	prox.-inflam	female	Stage IIIA	white
+TCGA-73-7499-01A-11	Primary Tumor	TCGA-73-7499	prox.-inflam	female	Stage IB	white
+TCGA-78-7161-01A-11	Primary Tumor	TCGA-78-7161	prox.-prolif.	female	Stage IIB	white
+TCGA-78-7539-01A-11	Primary Tumor	TCGA-78-7539	TRU	female	Stage IIA	white
+TCGA-75-5126-01A-01	Primary Tumor	TCGA-75-5126	prox.-inflam	female	Stage IIIA	not reported
+TCGA-78-7156-01A-11	Primary Tumor	TCGA-78-7156	prox.-prolif.	male	Stage IV	white
+TCGA-91-6849-01A-11	Primary Tumor	TCGA-91-6849	TRU	female	Stage IIIA	black or african american
+TCGA-95-7948-01A-11	Primary Tumor	TCGA-95-7948	prox.-inflam	female	Stage IB	white
+TCGA-44-7670-01A-11	Primary Tumor	TCGA-44-7670	prox.-prolif.	female	Stage IIA	white
+TCGA-75-6205-01A-11	Primary Tumor	TCGA-75-6205	prox.-inflam	female	Stage IB	not reported
+TCGA-05-4396-01A-21	Primary Tumor	TCGA-05-4396	prox.-prolif.	male	Stage IIIB	not reported
+TCGA-49-6745-11A-01	Solid Tissue Normal	TCGA-49-6745	normal	male	Stage IIIA	white
+TCGA-97-7554-01A-11	Primary Tumor	TCGA-97-7554	prox.-inflam	female	Stage IIIA	white
+TCGA-78-7150-01A-21	Primary Tumor	TCGA-78-7150	prox.-prolif.	male	Stage IIB	white
+TCGA-05-4433-01A-22	Primary Tumor	TCGA-05-4433	TRU	male	Stage IB	not reported
+TCGA-75-6203-01A-11	Primary Tumor	TCGA-75-6203	TRU	female	Stage IIIA	not reported
+TCGA-78-7152-01A-11	Primary Tumor	TCGA-78-7152	TRU	male	Stage IB	white
+TCGA-44-7659-01A-11	Primary Tumor	TCGA-44-7659	TRU	male	Stage IA	white
+TCGA-44-6776-01A-11	Primary Tumor	TCGA-44-6776	TRU	female	Stage IA	white
+TCGA-78-7153-01A-11	Primary Tumor	TCGA-78-7153	prox.-prolif.	female	Stage IB	white
+TCGA-55-7907-01A-11	Primary Tumor	TCGA-55-7907	prox.-inflam	male	Stage IIA	white
+TCGA-69-7765-01A-11	Primary Tumor	TCGA-69-7765	prox.-inflam	male	NA	black or african american
+TCGA-64-5775-01A-01	Primary Tumor	TCGA-64-5775	prox.-inflam	male	Stage IIIA	white
+TCGA-55-6972-01A-11	Primary Tumor	TCGA-55-6972	prox.-prolif.	male	Stage IB	white
+TCGA-64-1681-01A-11	Primary Tumor	TCGA-64-1681	TRU	female	Stage IA	white
+TCGA-95-7043-01A-11	Primary Tumor	TCGA-95-7043	prox.-prolif.	female	Stage IA	white
+TCGA-44-6779-01A-11	Primary Tumor	TCGA-44-6779	prox.-inflam	female	Stage IIB	white
+TCGA-50-5055-01A-01	Primary Tumor	TCGA-50-5055	TRU	female	Stage IIA	white
+TCGA-67-6216-01A-11	Primary Tumor	TCGA-67-6216	TRU	female	Stage IA	white
+TCGA-05-4415-01A-22	Primary Tumor	TCGA-05-4415	prox.-prolif.	male	Stage IIIB	not reported
+TCGA-53-7626-01A-12	Primary Tumor	TCGA-53-7626	TRU	female	Stage IIA	white
+TCGA-05-4410-01A-21	Primary Tumor	TCGA-05-4410	TRU	male	Stage IB	not reported
+TCGA-86-6562-01A-11	Primary Tumor	TCGA-86-6562	prox.-inflam	male	Stage IIA	white
+TCGA-78-7536-01A-11	Primary Tumor	TCGA-78-7536	prox.-prolif.	male	Stage IIIA	white
+TCGA-05-5715-01A-01	Primary Tumor	TCGA-05-5715	TRU	female	Stage IB	not reported
+TCGA-55-7728-01A-11	Primary Tumor	TCGA-55-7728	TRU	female	Stage IB	white
+TCGA-44-5645-01A-01	Primary Tumor	TCGA-44-5645	TRU	female	Stage IA	black or african american
+TCGA-38-6178-01A-11	Primary Tumor	TCGA-38-6178	TRU	female	Stage IIIA	white
+TCGA-78-7148-01A-11	Primary Tumor	TCGA-78-7148	prox.-prolif.	male	Stage IIB	white
+TCGA-93-7347-01A-11	Primary Tumor	TCGA-93-7347	TRU	female	Stage IA	white
+TCGA-50-5936-01A-11	Primary Tumor	TCGA-50-5936	prox.-prolif.	male	Stage IIIA	white
+TCGA-50-5932-01A-11	Primary Tumor	TCGA-50-5932	prox.-prolif.	male	Stage IIB	white
+TCGA-55-6712-01A-11	Primary Tumor	TCGA-55-6712	prox.-inflam	male	Stage IIA	white
+TCGA-50-5941-01A-11	Primary Tumor	TCGA-50-5941	prox.-inflam	female	Stage IIIA	white
+TCGA-05-4405-01A-21	Primary Tumor	TCGA-05-4405	TRU	female	Stage IB	not reported
+TCGA-44-2665-11A-01	Solid Tissue Normal	TCGA-44-2665	normal	female	Stage IIB	white
+TCGA-78-7155-01A-11	Primary Tumor	TCGA-78-7155	prox.-inflam	male	Stage IB	white
+TCGA-49-4512-01A-21	Primary Tumor	TCGA-49-4512	TRU	female	Stage IIIA	white
+TCGA-49-6745-01A-11	Primary Tumor	TCGA-49-6745	prox.-inflam	male	Stage IIIA	white
+TCGA-55-7574-01A-11	Primary Tumor	TCGA-55-7574	TRU	female	Stage IB	white
+TCGA-55-7727-01A-11	Primary Tumor	TCGA-55-7727	prox.-prolif.	male	Stage IIIA	white
+TCGA-78-7166-01A-12	Primary Tumor	TCGA-78-7166	prox.-prolif.	male	Stage IIB	white
+TCGA-97-7941-01A-11	Primary Tumor	TCGA-97-7941	TRU	female	Stage IA	white
+TCGA-05-4390-01A-02	Primary Tumor	TCGA-05-4390	prox.-prolif.	female	Stage IB	not reported
+TCGA-49-4514-01A-21	Primary Tumor	TCGA-49-4514	prox.-prolif.	female	Stage IA	white
+TCGA-91-7771-01A-11	Primary Tumor	TCGA-91-7771	TRU	male	Stage IIB	white
+TCGA-86-7713-01A-11	Primary Tumor	TCGA-86-7713	prox.-prolif.	male	Stage IIA	white
+TCGA-55-7283-01A-11	Primary Tumor	TCGA-55-7283	TRU	female	Stage IIIA	white
+TCGA-75-5147-01A-01	Primary Tumor	TCGA-75-5147	prox.-inflam	female	Stage IB	not reported
+TCGA-78-7154-01A-11	Primary Tumor	TCGA-78-7154	prox.-prolif.	male	Stage IIIA	white
+TCGA-91-6840-01A-11	Primary Tumor	TCGA-91-6840	prox.-prolif.	female	Stage IA	white
+TCGA-55-7815-01A-11	Primary Tumor	TCGA-55-7815	prox.-prolif.	male	Stage IB	not reported
+TCGA-49-4488-01A-01	Primary Tumor	TCGA-49-4488	prox.-inflam	female	Stage IA	white
+TCGA-67-6215-01A-11	Primary Tumor	TCGA-67-6215	TRU	female	Stage IB	white
+TCGA-50-6593-01A-11	Primary Tumor	TCGA-50-6593	prox.-inflam	female	Stage IIIA	white
+TCGA-75-7030-01A-11	Primary Tumor	TCGA-75-7030	TRU	male	Stage IIB	not reported
+TCGA-55-6985-01A-11	Primary Tumor	TCGA-55-6985	prox.-inflam	female	Stage IB	white
+TCGA-50-5051-01A-21	Primary Tumor	TCGA-50-5051	prox.-prolif.	female	Stage IIIA	white
+TCGA-93-7348-01A-21	Primary Tumor	TCGA-93-7348	TRU	female	Stage IA	white
+TCGA-78-7147-01A-11	Primary Tumor	TCGA-78-7147	TRU	female	Stage IIB	white
+TCGA-78-7542-01A-21	Primary Tumor	TCGA-78-7542	prox.-inflam	male	Stage IB	white
+TCGA-55-6543-01A-11	Primary Tumor	TCGA-55-6543	TRU	female	Stage IA	white
+TCGA-44-7671-01A-11	Primary Tumor	TCGA-44-7671	prox.-prolif.	male	Stage IB	black or african american
+TCGA-50-5932-11A-01	Solid Tissue Normal	TCGA-50-5932	normal	male	Stage IIB	white
+TCGA-44-2665-01A-01	Primary Tumor	TCGA-44-2665	prox.-inflam	female	Stage IIB	white
+TCGA-91-6828-01A-11	Primary Tumor	TCGA-91-6828	prox.-prolif.	male	Stage IA	white
+TCGA-73-7498-01A-12	Primary Tumor	TCGA-73-7498	TRU	female	Stage IA	white
+TCGA-49-4487-01A-21	Primary Tumor	TCGA-49-4487	prox.-inflam	female	Stage IA	white
+TCGA-78-7160-01A-11	Primary Tumor	TCGA-78-7160	prox.-prolif.	male	Stage IV	white
+TCGA-44-2666-01A-01	Primary Tumor	TCGA-44-2666	TRU	male	Stage IB	white
+TCGA-97-7938-01A-11	Primary Tumor	TCGA-97-7938	TRU	female	Stage IA	white
+TCGA-64-1679-01A-21	Primary Tumor	TCGA-64-1679	prox.-inflam	female	Stage IIIA	white
+TCGA-95-7947-01A-11	Primary Tumor	TCGA-95-7947	prox.-inflam	male	Stage IA	white
+TCGA-50-5044-01A-21	Primary Tumor	TCGA-50-5044	prox.-inflam	female	Stage IIIB	white
+TCGA-97-7937-01A-11	Primary Tumor	TCGA-97-7937	prox.-inflam	male	Stage IB	white
+TCGA-64-5774-01A-01	Primary Tumor	TCGA-64-5774	prox.-prolif.	male	Stage IB	white
+TCGA-78-7167-01A-11	Primary Tumor	TCGA-78-7167	prox.-prolif.	male	Stage IV	white
+TCGA-50-6597-01A-11	Primary Tumor	TCGA-50-6597	TRU	female	Stage IB	white

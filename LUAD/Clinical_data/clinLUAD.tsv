@@ -1,0 +1,586 @@
+bcr_patient_barcode	gender	ajcc_pathologic_stage	race	vital_status
+TCGA-62-A471	male	Stage IIB	white	Alive
+TCGA-67-3773	female	Stage IB	white	Alive
+TCGA-NJ-A7XG	male	Stage IIIA	black or african american	Alive
+TCGA-91-6848	male	Stage IIIA	white	Alive
+TCGA-55-6986	female	Stage IB	white	Alive
+TCGA-86-6851	female	Stage IIA	white	Alive
+TCGA-73-4677	male	NA	white	Dead
+TCGA-05-4245	male	Stage IIIA	not reported	Alive
+TCGA-78-7540	female	Stage IB	white	Dead
+TCGA-55-7576	male	Stage IB	black or african american	Alive
+TCGA-55-8615	male	Stage IIIA	white	Alive
+TCGA-49-4501	female	Stage IB	white	Dead
+TCGA-86-7954	female	Stage IB	white	Alive
+TCGA-44-2655	female	Stage IA	white	Alive
+TCGA-49-4505	female	Stage IIB	white	Dead
+TCGA-97-8177	female	Stage IB	white	Alive
+TCGA-J2-A4AD	female	Stage IA	white	Dead
+TCGA-50-6592	female	Stage IB	white	Dead
+TCGA-86-8674	male	Stage IIA	white	Alive
+TCGA-55-6981	female	Stage IIIA	white	Dead
+TCGA-55-7284	male	Stage IIB	white	Dead
+TCGA-91-6836	female	Stage IB	white	Alive
+TCGA-44-6146	male	Stage IIB	white	Alive
+TCGA-62-A46P	male	Stage IB	white	Dead
+TCGA-86-7955	male	Stage IB	white	Alive
+TCGA-50-6597	female	Stage IB	white	Dead
+TCGA-91-A4BD	male	Stage IIA	white	Alive
+TCGA-67-3771	female	Stage IA	black or african american	Alive
+TCGA-38-4625	female	Stage IB	white	Alive
+TCGA-78-7150	male	Stage IIB	white	Dead
+TCGA-50-5935	female	Stage IA	white	Dead
+TCGA-55-8089	male	Stage IA	white	Dead
+TCGA-67-6217	female	Stage IIA	white	Alive
+TCGA-05-4417	female	Stage IB	not reported	Alive
+TCGA-97-8179	male	Stage IA	white	Alive
+TCGA-49-6743	female	Stage IIIA	white	Alive
+TCGA-38-4629	male	Stage IIB	white	Dead
+TCGA-50-5939	male	Stage IB	white	Dead
+TCGA-55-8513	female	Stage IIB	white	Alive
+TCGA-97-8176	male	Stage IIIA	white	Dead
+TCGA-55-1592	male	Stage IA	white	Dead
+TCGA-91-6829	male	Stage IB	white	Dead
+TCGA-44-7660	male	Stage IB	white	Alive
+TCGA-50-5072	male	Stage IIIA	white	Dead
+TCGA-L9-A743	male	Stage IIA	black or african american	Alive
+TCGA-78-7162	male	Stage IA	white	Dead
+TCGA-55-7574	female	Stage IB	white	Dead
+TCGA-78-8662	female	Stage IB	not reported	Dead
+TCGA-86-8278	female	Stage IIB	white	Alive
+TCGA-78-8640	male	Stage IIA	not reported	Alive
+TCGA-55-8614	male	Stage IB	white	Alive
+TCGA-97-7554	female	Stage IIIA	white	Alive
+TCGA-44-7662	male	Stage IB	white	Alive
+TCGA-95-7944	male	Stage IA	white	Alive
+TCGA-97-7552	male	Stage IB	white	Alive
+TCGA-55-7995	female	Stage IA	white	Alive
+TCGA-97-8547	female	Stage IIIA	not reported	Alive
+TCGA-50-5944	female	Stage IA	white	Alive
+TCGA-55-A494	female	Stage IB	white	Alive
+TCGA-75-5146	male	Stage IB	not reported	Alive
+TCGA-95-7039	female	Stage IIB	white	Alive
+TCGA-55-7911	female	Stage IA	white	Alive
+TCGA-55-8511	female	Stage IB	white	Alive
+TCGA-73-4658	female	Stage IB	white	Dead
+TCGA-55-8512	male	Stage IV	white	Dead
+TCGA-55-8207	male	Stage IB	white	Alive
+TCGA-49-6742	male	Stage IIA	white	Dead
+TCGA-55-7910	female	Stage IIA	black or african american	Alive
+TCGA-75-6212	female	Stage IIB	not reported	Dead
+TCGA-78-7166	male	Stage IIB	white	Dead
+TCGA-69-7764	male	Stage IA	white	Alive
+TCGA-49-4506	female	Stage IIB	white	Dead
+TCGA-38-A44F	male	Stage IB	white	Alive
+TCGA-83-5908	female	Stage IA	white	Alive
+TCGA-L4-A4E6	male	Stage IA	white	Alive
+TCGA-44-5643	male	Stage IIIA	black or african american	Alive
+TCGA-NJ-A55A	female	Stage IB	white	Alive
+TCGA-55-7724	female	Stage IB	white	Alive
+TCGA-55-8508	female	Stage IIA	black or african american	Alive
+TCGA-73-4662	female	Stage IA	white	Alive
+TCGA-73-A9RS	male	Stage IIB	black or african american	Dead
+TCGA-44-2668	male	Stage IB	white	Dead
+TCGA-55-8299	female	Stage IA	white	Dead
+TCGA-86-8673	male	Stage IB	white	Alive
+TCGA-49-4487	female	Stage IA	white	Dead
+TCGA-55-6987	male	Stage IA	white	Alive
+TCGA-MP-A4TE	male	Stage IIA	white	Dead
+TCGA-44-2659	female	Stage IIB	white	Alive
+TCGA-62-8398	male	Stage IIIA	white	Dead
+TCGA-55-7907	male	Stage IIA	white	Dead
+TCGA-97-A4M1	female	Stage IA	white	Alive
+TCGA-93-A4JP	male	Stage IV	asian	Alive
+TCGA-S2-AA1A	female	Stage IA	black or african american	Alive
+TCGA-78-7160	male	Stage IV	white	Dead
+TCGA-50-5066	male	Stage IB	black or african american	Alive
+TCGA-05-4398	female	Stage IIIB	not reported	Alive
+TCGA-97-A4M6	female	Stage IA	white	Alive
+TCGA-75-6206	male	Stage IB	not reported	Alive
+TCGA-L4-A4E5	female	Stage I	white	Alive
+TCGA-55-6972	male	Stage IB	white	Dead
+TCGA-44-6774	female	Stage IIIA	white	Alive
+TCGA-95-7043	female	Stage IA	white	Dead
+TCGA-49-4494	male	Stage IIIA	white	Dead
+TCGA-05-4382	male	Stage IB	not reported	Alive
+TCGA-50-5946	male	Stage IA	white	Alive
+TCGA-44-6777	female	Stage IB	white	Dead
+TCGA-44-6779	female	Stage IIB	white	Dead
+TCGA-55-6982	female	Stage IIB	white	Dead
+TCGA-44-7661	female	Stage IB	white	Dead
+TCGA-50-5055	female	Stage IIA	white	Dead
+TCGA-50-5930	male	Stage IIIA	white	Dead
+TCGA-86-7713	male	Stage IIA	white	Alive
+TCGA-67-3774	female	Stage IB	white	Alive
+TCGA-44-2662	male	Stage IB	white	Alive
+TCGA-97-7553	female	Stage IA	white	Alive
+TCGA-55-7283	female	Stage IIIA	white	Alive
+TCGA-73-4659	male	Stage IIIA	white	Dead
+TCGA-55-A492	female	Stage IA	white	Alive
+TCGA-49-AARE	female	Stage IA	black or african american	Dead
+TCGA-05-4430	female	Stage IB	not reported	Alive
+TCGA-49-AAR0	male	Stage IA	black or african american	Alive
+TCGA-L9-A443	female	Stage IA	white	Dead
+TCGA-05-4415	male	Stage IIIB	not reported	Dead
+TCGA-75-5147	female	Stage IB	not reported	Alive
+TCGA-78-7154	male	Stage IIIA	white	Dead
+TCGA-05-4410	male	Stage IB	not reported	Alive
+TCGA-05-4418	male	Stage IIIA	not reported	Dead
+TCGA-55-1595	female	Stage IA	asian	Alive
+TCGA-05-4420	male	Stage IB	not reported	Alive
+TCGA-50-8457	female	Stage IA	black or african american	Alive
+TCGA-69-7974	female	Stage IIIA	white	Alive
+TCGA-55-A4DG	male	Stage IA	white	Alive
+TCGA-55-8507	male	Stage IA	white	Alive
+TCGA-55-8506	female	Stage IIB	white	Alive
+TCGA-55-6969	male	Stage IB	white	Alive
+TCGA-44-7672	female	Stage IA	white	Alive
+TCGA-64-5781	female	Stage IB	white	Alive
+TCGA-49-4488	female	Stage IA	white	Dead
+TCGA-O1-A52J	female	Stage IA	white	Dead
+TCGA-44-2656	male	Stage IB	white	Alive
+TCGA-55-7728	female	Stage IB	white	Alive
+TCGA-62-8402	female	Stage IIIA	white	Dead
+TCGA-69-7973	female	Stage IB	white	Alive
+TCGA-86-6562	male	Stage IIA	white	Dead
+TCGA-69-8253	female	Stage IIA	black or african american	Alive
+TCGA-44-5645	female	Stage IA	black or african american	Alive
+TCGA-86-8056	female	Stage IIIA	white	Alive
+TCGA-55-6642	male	Stage IB	white	Alive
+TCGA-49-AAR9	male	Stage IIB	black or african american	Dead
+TCGA-86-A4JF	male	Stage IIB	white	Dead
+TCGA-05-5715	female	Stage IB	not reported	Alive
+TCGA-95-7947	male	Stage IA	white	Alive
+TCGA-50-8460	male	Stage IA	white	Alive
+TCGA-L9-A444	female	Stage IA	white	Alive
+TCGA-91-8497	female	Stage IA	white	Dead
+TCGA-44-2666	male	Stage IB	white	Dead
+TCGA-50-5051	female	Stage IIIA	white	Dead
+TCGA-J2-A4AG	female	Stage IA	white	Alive
+TCGA-55-8092	male	Stage IIB	white	Dead
+TCGA-97-A4LX	male	Stage IB	white	Alive
+TCGA-49-6761	female	Stage IIIA	white	Alive
+TCGA-55-A493	female	Stage IB	white	Alive
+TCGA-62-A472	male	Stage IIB	white	Alive
+TCGA-55-7227	male	Stage IIIA	white	Dead
+TCGA-78-7145	female	Stage IV	white	Dead
+TCGA-75-7031	female	Stage IB	not reported	Alive
+TCGA-62-A470	male	Stage IB	white	Dead
+TCGA-49-4507	female	Stage IIIA	white	Dead
+TCGA-97-7938	female	Stage IA	white	Dead
+TCGA-05-4432	male	Stage IIB	not reported	Alive
+TCGA-86-A4D0	male	Stage IIA	white	Dead
+TCGA-78-7147	female	Stage IIB	white	Dead
+TCGA-86-7714	female	Stage IIIA	black or african american	Dead
+TCGA-78-7143	female	Stage IB	white	Dead
+TCGA-91-8499	female	Stage IA	white	Alive
+TCGA-91-A4BC	male	Stage IIA	white	Alive
+TCGA-55-7816	female	Stage IV	white	Dead
+TCGA-50-5932	male	Stage IIB	white	Dead
+TCGA-L9-A7SV	male	Stage IIA	black or african american	Alive
+TCGA-55-8620	male	Stage IV	white	Dead
+TCGA-93-7347	female	Stage IA	white	Alive
+TCGA-50-5936	male	Stage IIIA	white	Dead
+TCGA-97-A4M3	female	Stage IA	white	Alive
+TCGA-69-8254	male	NA	white	Alive
+TCGA-75-6207	male	Stage IIIA	not reported	Dead
+TCGA-50-5068	female	Stage IIB	white	Dead
+TCGA-NJ-A4YF	female	Stage IA	black or african american	Alive
+TCGA-4B-A93V	female	Stage IA	black or african american	Dead
+TCGA-78-7163	male	Stage IB	white	Alive
+TCGA-86-8668	female	Stage IA	white	Alive
+TCGA-55-6979	female	Stage IIB	white	Dead
+TCGA-80-5608	female	Stage IA	not reported	Alive
+TCGA-62-8395	female	Stage IIB	white	Alive
+TCGA-35-5375	male	Stage IIIA	white	Alive
+TCGA-44-6778	male	Stage IA	black or african american	Alive
+TCGA-97-8175	female	Stage IB	white	Alive
+TCGA-MP-A4T6	female	Stage IIIA	white	Dead
+TCGA-97-A4M5	male	Stage IA	white	Alive
+TCGA-55-8505	male	Stage IIIA	white	Alive
+TCGA-44-6145	female	Stage IA	white	Alive
+TCGA-49-4510	female	Stage IIB	black or african american	Dead
+TCGA-MP-A4TK	female	Stage IIB	not reported	Dead
+TCGA-62-A46V	female	Stage IB	white	Alive
+TCGA-80-5607	female	Stage IIB	not reported	Alive
+TCGA-44-A4SS	male	Stage IA	white	Alive
+TCGA-91-8496	female	Stage IB	white	Alive
+TCGA-55-7281	female	Stage IA	white	Alive
+TCGA-50-5044	female	Stage IIIB	white	Dead
+TCGA-44-3919	female	Stage IA	white	Dead
+TCGA-67-3772	female	Stage IB	white	Alive
+TCGA-78-7537	male	Stage IB	not reported	Dead
+TCGA-78-7155	male	Stage IB	white	Dead
+TCGA-69-A59K	female	Stage IIB	black or african american	Alive
+TCGA-75-7025	male	Stage IB	not reported	Alive
+TCGA-55-8514	female	Stage IB	black or african american	Alive
+TCGA-55-7570	male	Stage IA	black or african american	Alive
+TCGA-78-7146	female	Stage IIIA	white	Dead
+TCGA-44-3398	female	Stage IA	white	Alive
+TCGA-55-8094	male	Stage IV	white	Alive
+TCGA-05-4425	female	Stage IV	not reported	Alive
+TCGA-55-7914	female	Stage IIA	white	Dead
+TCGA-49-6767	female	Stage IIB	white	Alive
+TCGA-49-4490	female	Stage IIIA	white	Dead
+TCGA-35-4123	male	Stage IA	white	Alive
+TCGA-55-1594	male	Stage IIIA	white	Alive
+TCGA-44-8117	female	Stage IB	white	Alive
+TCGA-05-4397	male	Stage IIB	not reported	Dead
+TCGA-44-3918	female	Stage IA	white	Alive
+TCGA-95-8494	male	Stage IIA	white	Alive
+TCGA-MP-A4T9	female	Stage IIIA	white	Dead
+TCGA-MP-A4SV	male	Stage IB	not reported	Dead
+TCGA-93-A4JQ	male	Stage IA	white	Alive
+TCGA-44-3917	female	Stage IB	white	Alive
+TCGA-05-4402	female	Stage IV	not reported	Dead
+TCGA-62-8394	female	Stage IIIB	white	Dead
+TCGA-55-8204	female	Stage IB	white	Alive
+TCGA-MN-A4N1	male	Stage IIA	black or african american	Alive
+TCGA-50-5942	female	Stage IA	white	Alive
+TCGA-05-4395	male	Stage IIIB	not reported	Dead
+TCGA-49-AAR4	male	Stage IIIA	black or african american	Dead
+TCGA-55-8619	female	Stage IIB	white	Alive
+TCGA-69-7761	male	Stage IB	white	Alive
+TCGA-73-7499	female	Stage IB	white	Dead
+TCGA-55-7903	male	Stage IA	white	Alive
+TCGA-55-8208	female	Stage IA	white	Alive
+TCGA-78-8660	male	Stage IIB	not reported	Dead
+TCGA-05-4427	female	Stage IIB	not reported	Alive
+TCGA-75-5122	male	Stage IB	not reported	Dead
+TCGA-62-A46U	female	Stage IIB	white	Alive
+TCGA-50-5933	male	Stage IIIB	white	Dead
+TCGA-MP-A4TH	female	Stage IA	white	Alive
+TCGA-78-7156	male	Stage IV	white	Dead
+TCGA-86-8669	male	Stage IA	white	Alive
+TCGA-44-A47A	female	Stage IB	white	Alive
+TCGA-78-7539	female	Stage IIA	white	Alive
+TCGA-MP-A4T8	male	Stage IIIA	not reported	Dead
+TCGA-NJ-A55R	male	Stage IA	white	Alive
+TCGA-53-A4EZ	male	Stage IIA	white	Alive
+TCGA-55-6970	female	Stage IIIA	white	Dead
+TCGA-86-8359	male	Stage IIIA	white	Dead
+TCGA-99-8032	male	Stage IA	white	Alive
+TCGA-50-7109	male	Stage IA	white	Dead
+TCGA-44-7667	female	Stage IIB	white	Alive
+TCGA-NJ-A4YG	male	Stage IB	white	Alive
+TCGA-55-8302	male	Stage IB	white	Alive
+TCGA-64-1679	female	Stage IIIA	white	Alive
+TCGA-38-7271	female	Stage IA	white	Dead
+TCGA-50-6595	female	Stage IIIA	white	Dead
+TCGA-55-6968	male	Stage IV	white	Dead
+TCGA-44-8120	male	Stage IB	black or african american	Alive
+TCGA-99-8025	female	Stage IIIA	black or african american	Alive
+TCGA-50-6594	female	Stage IIIA	black or african american	Dead
+TCGA-44-A479	female	Stage IB	black or african american	Alive
+TCGA-86-8076	male	Stage IA	white	Alive
+TCGA-MP-A4TF	female	Stage IIA	white	Dead
+TCGA-78-7161	female	Stage IIB	white	Dead
+TCGA-38-4632	male	Stage IV	black or african american	Dead
+TCGA-95-8039	male	Stage IA	white	Alive
+TCGA-86-8075	female	Stage IB	white	Dead
+TCGA-44-6147	female	Stage IA	white	Alive
+TCGA-69-7760	male	Stage IIB	white	Alive
+TCGA-44-6148	male	Stage IA	white	Alive
+TCGA-64-1677	female	Stage IIIA	white	Dead
+TCGA-NJ-A55O	female	Stage IIA	white	Alive
+TCGA-05-5420	male	Stage IIIA	not reported	Alive
+TCGA-97-8174	male	Stage IIA	white	Dead
+TCGA-MP-A4SY	male	Stage IIB	white	Dead
+TCGA-55-6971	female	Stage IB	white	Alive
+TCGA-55-8621	female	Stage IA	white	Alive
+TCGA-86-A456	female	Stage IA	asian	Alive
+TCGA-55-7573	female	Stage IA	white	Alive
+TCGA-MP-A5C7	female	Stage IB	white	Alive
+TCGA-MP-A4TJ	female	Stage IA	not reported	Dead
+TCGA-64-5778	male	Stage IB	white	Alive
+TCGA-55-7726	female	Stage IA	white	Alive
+TCGA-62-8397	female	Stage IIB	white	Alive
+TCGA-L9-A8F4	female	Stage IB	black or african american	Alive
+TCGA-75-5126	female	Stage IIIA	not reported	Alive
+TCGA-44-2664	female	Stage IA	black or african american	Alive
+TCGA-91-6828	male	Stage IA	white	Alive
+TCGA-91-6849	female	Stage IIIA	black or african american	Alive
+TCGA-99-8033	female	Stage IV	white	Dead
+TCGA-55-8205	female	Stage IIA	white	Alive
+TCGA-55-8510	female	Stage IB	white	Alive
+TCGA-44-A47B	male	Stage IB	white	Alive
+TCGA-99-7458	female	Stage IIIA	white	Alive
+TCGA-49-AAQV	female	Stage II	black or african american	Dead
+TCGA-99-8028	female	Stage IA	black or african american	Alive
+TCGA-91-6847	female	Stage IB	white	Alive
+TCGA-MP-A4TA	female	Stage IA	white	Dead
+TCGA-49-AARN	female	Stage IA	black or african american	Dead
+TCGA-50-5049	male	Stage IA	white	Alive
+TCGA-55-5899	male	NA	white	Alive
+TCGA-MP-A4TC	male	Stage IIIA	white	Dead
+TCGA-49-AARQ	female	Stage I	black or african american	Alive
+TCGA-05-4384	male	Stage IIIA	not reported	Alive
+TCGA-75-6205	female	Stage IB	not reported	Dead
+TCGA-55-8203	female	Stage IA	white	Alive
+TCGA-50-6591	female	Stage IV	white	Dead
+TCGA-44-7670	female	Stage IIA	white	Alive
+TCGA-05-5425	male	Stage IIB	not reported	Alive
+TCGA-49-AARR	male	Stage IA	black or african american	Alive
+TCGA-49-6745	male	Stage IIIA	white	Alive
+TCGA-86-7711	male	Stage IIA	white	Dead
+TCGA-97-8552	female	Stage I	white	Alive
+TCGA-50-8459	male	Stage IIB	white	Alive
+TCGA-93-A4JN	male	Stage IV	white	Alive
+TCGA-95-A4VP	female	Stage IIIA	white	Alive
+TCGA-86-A4P7	female	Stage IB	white	Alive
+TCGA-50-5045	female	NA	black or african american	Dead
+TCGA-69-8453	male	Stage IIB	white	Alive
+TCGA-05-4396	male	Stage IIIB	not reported	Dead
+TCGA-55-7725	female	Stage IA	white	Alive
+TCGA-55-6975	male	Stage IIB	white	Dead
+TCGA-86-8054	male	Stage IIB	white	Alive
+TCGA-67-3776	female	Stage IIB	white	Alive
+TCGA-49-4512	female	Stage IIIA	white	Dead
+TCGA-55-8206	male	Stage IA	white	Alive
+TCGA-50-6590	female	Stage IB	white	Dead
+TCGA-55-A491	female	Stage IA	white	Alive
+TCGA-05-4389	male	Stage IA	not reported	Alive
+TCGA-86-7701	male	Stage IV	white	Alive
+TCGA-55-A48Y	male	Stage IIA	white	Alive
+TCGA-50-5931	female	Stage IB	white	Dead
+TCGA-95-7948	female	Stage IB	white	Alive
+TCGA-49-6744	female	Stage IIA	white	Alive
+TCGA-69-7979	female	Stage IB	white	Alive
+TCGA-MP-A4SW	male	Stage IIB	white	Dead
+TCGA-64-5815	male	Stage IIB	white	Alive
+TCGA-55-A48Z	female	Stage IIIB	white	Alive
+TCGA-L9-A50W	male	Stage IIA	black or african american	Dead
+TCGA-MN-A4N5	male	Stage IA	white	Alive
+TCGA-75-6203	female	Stage IIIA	not reported	Alive
+TCGA-95-7562	male	Stage IIA	black or african american	Dead
+TCGA-73-4676	male	Stage IIA	white	Dead
+TCGA-78-8655	female	Stage IA	not reported	Alive
+TCGA-55-1596	male	Stage IIB	asian	Alive
+TCGA-50-6673	female	Stage I	white	Dead
+TCGA-64-1680	male	Stage IV	white	Alive
+TCGA-69-7763	male	Stage IA	white	Alive
+TCGA-73-4670	female	Stage IV	white	Alive
+TCGA-73-7498	female	Stage IA	white	Alive
+TCGA-64-5779	male	Stage IIIA	white	Alive
+TCGA-73-4675	male	Stage IIIA	white	Dead
+TCGA-97-7546	female	Stage IA	white	Alive
+TCGA-05-4433	male	Stage IB	not reported	Alive
+TCGA-69-7980	female	Stage I	white	Alive
+TCGA-44-5644	female	Stage IB	white	Alive
+TCGA-55-8097	female	Stage IA	white	Alive
+TCGA-75-5125	male	Stage IIB	not reported	Dead
+TCGA-73-4668	female	Stage IIB	american indian or alaska native	Alive
+TCGA-38-4626	female	NA	white	Alive
+TCGA-97-7941	female	Stage IA	white	Alive
+TCGA-44-6144	male	Stage IA	white	Alive
+TCGA-55-8301	male	Stage IB	white	Alive
+TCGA-44-8119	male	Stage IIB	white	Alive
+TCGA-78-7152	male	Stage IB	white	Dead
+TCGA-38-4631	female	Stage IB	white	Dead
+TCGA-05-4390	female	Stage IB	not reported	Alive
+TCGA-44-7659	male	Stage IA	white	Alive
+TCGA-49-4514	female	Stage IA	white	Alive
+TCGA-55-A490	male	Stage IIA	white	Dead
+TCGA-86-8279	male	Stage IIA	white	Alive
+TCGA-55-7727	male	Stage IIIA	white	Alive
+TCGA-L9-A5IP	female	Stage IV	black or african american	Dead
+TCGA-J2-8194	female	Stage IIB	white	Alive
+TCGA-NJ-A4YI	female	Stage IIIA	white	Dead
+TCGA-93-8067	male	Stage IB	asian	Alive
+TCGA-75-6211	female	Stage IB	not reported	Dead
+TCGA-69-7765	male	NA	black or african american	Alive
+TCGA-78-7149	male	Stage IIIB	white	Alive
+TCGA-55-6980	male	Stage IA	white	Alive
+TCGA-91-6835	female	Stage IA	white	Alive
+TCGA-86-8585	male	Stage IB	white	Alive
+TCGA-44-A4SU	female	Stage IA	white	Dead
+TCGA-MP-A4T4	female	Stage IIB	white	Dead
+TCGA-86-8672	male	Stage IIB	white	Dead
+TCGA-91-7771	male	Stage IIB	white	Alive
+TCGA-44-6776	female	Stage IA	white	Alive
+TCGA-78-7153	female	Stage IB	white	Alive
+TCGA-62-A46R	female	Stage IB	white	Dead
+TCGA-75-6214	female	Stage IIIA	not reported	Dead
+TCGA-86-8671	female	Stage IIB	white	Alive
+TCGA-55-A48X	female	Stage IIA	white	Alive
+TCGA-64-1681	female	Stage IA	white	Dead
+TCGA-05-5423	male	Stage IIB	not reported	Alive
+TCGA-97-A4M7	male	Stage IA	white	Alive
+TCGA-05-4244	male	Stage IV	not reported	Alive
+TCGA-64-5775	male	Stage IIIA	white	Dead
+TCGA-97-A4M2	male	Stage IA	white	Alive
+TCGA-55-7913	female	Stage IA	black or african american	Dead
+TCGA-86-8055	male	Stage IIA	white	Dead
+TCGA-97-8172	female	Stage IB	white	Alive
+TCGA-55-A4DF	male	Stage IA	white	Dead
+TCGA-55-8096	female	Stage IB	white	Dead
+TCGA-38-4628	female	Stage IIB	white	Dead
+TCGA-J2-8192	female	Stage IIA	white	Alive
+TCGA-05-4426	male	Stage IB	not reported	Alive
+TCGA-71-8520	female	Stage IB	asian	Dead
+TCGA-67-6216	female	Stage IA	white	Alive
+TCGA-MP-A4TD	male	Stage IIIA	white	Dead
+TCGA-95-A4VN	female	Stage IIA	white	Alive
+TCGA-97-8171	male	Stage IV	asian	Alive
+TCGA-86-8073	male	Stage IB	white	Alive
+TCGA-05-4403	male	Stage IB	not reported	Alive
+TCGA-MN-A4N4	male	Stage IA	white	Alive
+TCGA-55-A57B	female	Stage IA	black or african american	Alive
+TCGA-55-8091	male	Stage IB	white	Alive
+TCGA-95-7567	male	Stage IIB	white	Alive
+TCGA-44-3396	female	Stage IIIA	white	Alive
+TCGA-44-6775	female	Stage IB	white	Alive
+TCGA-95-A4VK	female	Stage IIIA	white	Alive
+TCGA-99-AA5R	female	Stage IA	black or african american	Alive
+TCGA-53-7626	female	Stage IIA	white	Dead
+TCGA-93-A4JO	male	Stage IA	white	Dead
+TCGA-91-6840	female	Stage IA	white	Alive
+TCGA-67-4679	male	NA	white	Alive
+TCGA-05-5428	male	Stage IIA	not reported	Alive
+TCGA-38-4627	female	Stage IIA	white	Dead
+TCGA-NJ-A4YP	male	Stage IB	white	Alive
+TCGA-62-A46O	female	Stage IB	white	Dead
+TCGA-86-8280	female	Stage IIA	white	Alive
+TCGA-05-4434	female	Stage IV	not reported	Dead
+TCGA-44-A47G	female	Stage IA	white	Alive
+TCGA-78-7536	male	Stage IIIA	white	Dead
+TCGA-91-6831	male	Stage IB	white	Alive
+TCGA-53-7813	female	Stage IIIB	white	Alive
+TCGA-67-6215	female	Stage IB	white	Alive
+TCGA-78-7633	male	Stage IB	white	Dead
+TCGA-35-4122	male	Stage IA	white	Alive
+TCGA-55-7815	male	Stage IB	not reported	Alive
+TCGA-97-A4M0	female	Stage IB	white	Alive
+TCGA-05-4422	male	Stage IB	not reported	Alive
+TCGA-78-7535	male	Stage IB	white	Dead
+TCGA-86-8358	male	Stage IB	white	Alive
+TCGA-MP-A4T7	female	Stage IV	not reported	Dead
+TCGA-75-7030	male	Stage IIB	not reported	Alive
+TCGA-62-A46S	male	Stage IB	white	Dead
+TCGA-86-8074	female	Stage IIA	white	Alive
+TCGA-75-7027	male	Stage IB	not reported	Alive
+TCGA-50-6593	female	Stage IIIA	white	Dead
+TCGA-05-4249	male	Stage IB	not reported	Alive
+TCGA-44-7669	male	Stage IIA	black or african american	Dead
+TCGA-71-6725	female	Stage IB	asian	Alive
+TCGA-55-8087	female	Stage IB	white	Alive
+TCGA-73-4666	female	Stage IV	white	Alive
+TCGA-MP-A4T2	male	Stage IA	white	Dead
+TCGA-78-7159	female	Stage IA	white	Alive
+TCGA-55-8090	male	Stage IA	white	Dead
+TCGA-80-5611	male	Stage IB	not reported	Alive
+TCGA-55-6985	female	Stage IB	white	Alive
+TCGA-J2-A4AE	female	Stage IA	white	Alive
+TCGA-78-7158	female	Stage IIIB	white	Dead
+TCGA-78-7542	male	Stage IB	white	Dead
+TCGA-55-6543	female	Stage IA	white	Alive
+TCGA-55-6978	male	Stage IIA	white	Dead
+TCGA-49-AARO	female	Stage IA	black or african american	Alive
+TCGA-93-7348	female	Stage IA	white	Alive
+TCGA-NJ-A4YQ	female	Stage IA	white	Alive
+TCGA-78-7148	male	Stage IIB	white	Dead
+TCGA-35-3615	male	Stage IB	white	Alive
+TCGA-86-7953	female	Stage IA	white	Alive
+TCGA-44-7671	male	Stage IB	black or african american	Alive
+TCGA-55-6983	male	Stage IIB	white	Alive
+TCGA-53-7624	female	Stage IV	white	Dead
+TCGA-38-6178	female	Stage IIIA	white	Alive
+TCGA-67-3770	female	Stage IA	white	Alive
+TCGA-69-8255	male	Stage IA	white	Alive
+TCGA-62-A46Y	female	Stage IIIA	white	Dead
+TCGA-55-6984	female	Stage IIB	white	Dead
+TCGA-49-AAR3	male	Stage IIB	black or african american	Alive
+TCGA-55-6712	male	Stage IIA	white	Dead
+TCGA-38-4630	female	Stage IB	white	Dead
+TCGA-91-6830	female	Stage IIA	white	Alive
+TCGA-78-8648	female	Stage IIB	not reported	Dead
+TCGA-MP-A4TI	male	Stage IIA	white	Dead
+TCGA-44-2661	female	Stage IA	white	Alive
+TCGA-50-5941	female	Stage IIIA	white	Alive
+TCGA-44-2657	female	Stage IB	white	Alive
+TCGA-86-8281	male	Stage IA	white	Alive
+TCGA-69-7978	male	Stage IIB	white	Alive
+TCGA-55-8085	male	Stage IA	white	Alive
+TCGA-05-4405	female	Stage IB	not reported	Alive
+TCGA-97-7547	female	Stage IB	white	Alive
+TCGA-44-A47F	male	Stage IIB	white	Alive
+TCGA-49-4486	male	Stage IA	white	Dead
+TCGA-64-1678	female	NA	white	Alive
+TCGA-62-8399	male	Stage IIIA	white	Alive
+TCGA-05-5429	male	Stage IIIA	not reported	Dead
+TCGA-49-AAR2	male	Stage IB	black or african american	Alive
+TCGA-86-A4P8	female	Stage IIIA	white	Alive
+TCGA-05-4250	female	Stage IIIA	not reported	Dead
+TCGA-05-4424	male	Stage IIB	not reported	Alive
+TCGA-64-1676	male	Stage IA	white	Alive
+TCGA-44-2665	female	Stage IIB	white	Alive
+TCGA-55-7994	male	Stage IIB	white	Alive
+TCGA-97-7937	male	Stage IB	white	Alive
+TCGA-64-5774	male	Stage IB	white	Alive
+TCGA-78-7220	female	Stage IIIA	white	Dead
+TCGA-78-7167	male	Stage IV	white	Dead
+TCGA-55-8616	female	Stage IB	white	Alive
+TCGA-44-4112	female	Stage IB	white	Dead
+TCGA-17-Z021	NA	NA	NA	NA
+TCGA-17-Z043	NA	NA	NA	NA
+TCGA-17-Z033	NA	NA	NA	NA
+TCGA-17-Z013	NA	NA	NA	NA
+TCGA-17-Z026	NA	NA	NA	NA
+TCGA-17-Z041	NA	NA	NA	NA
+TCGA-17-Z055	NA	NA	NA	NA
+TCGA-17-Z054	NA	NA	NA	NA
+TCGA-17-Z040	NA	NA	NA	NA
+TCGA-17-Z017	NA	NA	NA	NA
+TCGA-17-Z051	NA	NA	NA	NA
+TCGA-17-Z027	NA	NA	NA	NA
+TCGA-17-Z050	NA	NA	NA	NA
+TCGA-17-Z060	NA	NA	NA	NA
+TCGA-17-Z034	NA	NA	NA	NA
+TCGA-17-Z035	NA	NA	NA	NA
+TCGA-17-Z019	NA	NA	NA	NA
+TCGA-17-Z020	NA	NA	NA	NA
+TCGA-17-Z045	NA	NA	NA	NA
+TCGA-17-Z011	NA	NA	NA	NA
+TCGA-17-Z037	NA	NA	NA	NA
+TCGA-17-Z028	NA	NA	NA	NA
+TCGA-17-Z004	NA	NA	NA	NA
+TCGA-17-Z016	NA	NA	NA	NA
+TCGA-17-Z059	NA	NA	NA	NA
+TCGA-17-Z006	NA	NA	NA	NA
+TCGA-17-Z029	NA	NA	NA	NA
+TCGA-17-Z005	NA	NA	NA	NA
+TCGA-17-Z046	NA	NA	NA	NA
+TCGA-17-Z025	NA	NA	NA	NA
+TCGA-17-Z002	NA	NA	NA	NA
+TCGA-17-Z057	NA	NA	NA	NA
+TCGA-17-Z012	NA	NA	NA	NA
+TCGA-17-Z047	NA	NA	NA	NA
+TCGA-17-Z032	NA	NA	NA	NA
+TCGA-17-Z009	NA	NA	NA	NA
+TCGA-17-Z038	NA	NA	NA	NA
+TCGA-17-Z036	NA	NA	NA	NA
+TCGA-17-Z049	NA	NA	NA	NA
+TCGA-17-Z003	NA	NA	NA	NA
+TCGA-17-Z014	NA	NA	NA	NA
+TCGA-17-Z042	NA	NA	NA	NA
+TCGA-17-Z024	NA	NA	NA	NA
+TCGA-17-Z058	NA	NA	NA	NA
+TCGA-17-Z052	NA	NA	NA	NA
+TCGA-17-Z044	NA	NA	NA	NA
+TCGA-17-Z048	NA	NA	NA	NA
+TCGA-17-Z053	NA	NA	NA	NA
+TCGA-17-Z000	NA	NA	NA	NA
+TCGA-17-Z061	NA	NA	NA	NA
+TCGA-17-Z010	NA	NA	NA	NA
+TCGA-17-Z018	NA	NA	NA	NA
+TCGA-17-Z008	NA	NA	NA	NA
+TCGA-17-Z007	NA	NA	NA	NA
+TCGA-17-Z022	NA	NA	NA	NA
+TCGA-17-Z039	NA	NA	NA	NA
+TCGA-17-Z015	NA	NA	NA	NA
+TCGA-17-Z023	NA	NA	NA	NA
+TCGA-17-Z031	NA	NA	NA	NA
+TCGA-17-Z062	NA	NA	NA	NA
+TCGA-17-Z056	NA	NA	NA	NA
+TCGA-17-Z001	NA	NA	NA	NA
+TCGA-17-Z030	NA	NA	NA	NA
