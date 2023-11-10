@@ -2,8 +2,9 @@
 
 setwd("/home/jvasquez/Documents/Omics/LUAD/4_MI/sort/filt/")
 ########################PARAMETERS & PACKAGES
-#net=commandArgs(trailingOnly=TRUE)
-net="GO:0000768.LUAD.filtered.alt"
+net=commandArgs(trailingOnly=TRUE)
+print(net)
+#net="GO:0000768.LUAD.filtered.alt"
 library(igraph)
 library(tidyverse)
 library(biomaRt)
@@ -26,19 +27,19 @@ E(g)$width=abs(as.numeric(edges$MI))
 #node color maps lfc
 subtype=unlist(strsplit(net,".",fixed=T))[2]
 
-# NO DA.R
-# de=read_tsv("DE.genes.tsv")
-# dmir=read_tsv("DE.miR.tsv")
-# dm=read_tsv("DMcpgs-RUV.tsv")
-# da=list(cpgs=dm,genes=de,mir=dmir)
-# colnames(da$genes)[2]="id"
-# da2=lapply(da,function(x) 
-#   x[grep(subtype,x$contrast),]%>%filter(id%in%V(g)$name))
-# da3=data.frame(unique(mapply(rbind,do.call(rbind,lapply(da2[2:3],
-#                                                         function(x) x[,c("id","logFC","adj.P.Val")])),
-#                              da$cpgs[,c(2,7,4)])))#cpgs have different colnames
-# da4=da3[order(match(da3$id,V(g)$name)),]
-# V(g)$color=as.numeric(da4[1:6,]$logFC)
+
+de=read_tsv("/home/jvasquez/Documents/Omics/LUAD/1_PrepoData/DE.genes.tsv")
+dmir=read_tsv("/home/jvasquez/Documents/Omics/LUAD/1_PrepoData/DE.miR.tsv")
+dm=read_tsv("/home/jvasquez/Documents/Omics/LUAD/1_PrepoData/DMcpgs-RUV.tsv")
+da=list(cpgs=dm,genes=de,mir=dmir)
+colnames(da$genes)[2]="id"
+da2=lapply(da,function(x)
+  x[grep(subtype,x$contrast),]%>%filter(id%in%V(g)$name))
+da3=data.frame(unique(mapply(rbind,do.call(rbind,lapply(da2[2:3],
+                                                        function(x) x[,c("id","logFC","adj.P.Val")])),
+                             da$cpgs[,c(2,7,4)])))#cpgs have different colnames
+da4=da3[order(match(da3$id,V(g)$name)),]
+V(g)$color=as.numeric(da4[1:length(V(g)$size),]$logFC)
 
 #get readable names
 methy=read_tsv("/home/jvasquez/Documents/Omics/LUAD/3_FuncEnrichment/MapMethy.tsv")
@@ -106,6 +107,7 @@ setNodeSizeMapping(table.column="size",
 #setEdgeTargetArrowColorDefault('#737373')
 clearEdgeBends()
 saveSession(filename=paste(paste(unlist(strsplit(net,'.',fixed=T))[1:2],collapse='.'),"cys",sep='.'))
+closeSession(FALSE)
 #closeSession(FALSE)
 
 #a manita

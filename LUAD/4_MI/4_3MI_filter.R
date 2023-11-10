@@ -7,7 +7,7 @@ suppressPackageStartupMessages(library(igraph))
 setwd("/home/jvasquez/Documents/Omics/LUAD/4_MI/sort/")
 mi=commandArgs(trailingOnly=TRUE)
 print(mi)
-mi="GO:0031122.LUAD.sort"
+#mi="GO:0031122.LUAD.sort"
 edges=read_tsv(mi,col_names=F,show_col_types=F)
 
 g=graph.data.frame(edges[,1:2],directed=F)
