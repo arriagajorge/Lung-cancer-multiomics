@@ -1,0 +1,5 @@
+"AverageShortestPathLength","BetweennessCentrality","ClosenessCentrality","ClusteringCoefficient","Degree","Eccentricity","id","IsSingleNode","label","name","NeighborhoodConnectivity","NumberOfDirectedEdges","NumberOfUndirectedEdges","PartnerOfMultiEdgedNodePairs","Radiality","selected","SelfLoops","shared name","size","Stress","TopologicalCoefficient","type"
+"1.0","1.0","1.0","0.0","3","1","hsa-mir-199a-2","false","miR-199a-2","hsa-mir-199a-2","1.0","0","3","0","1.0","false","0","hsa-mir-199a-2","3.0","6","0.0","h"
+"1.6666666666666667","0.0","0.6","0.0","1","2","cg27635394","false","H2BC3","cg27635394","3.0","0","1","0","0.7777777777777777","false","0","cg27635394","1.0","0","0.0","c"
+"1.6666666666666667","0.0","0.6","0.0","1","2","cg21885317","false","C8orf76","cg21885317","3.0","0","1","0","0.7777777777777777","false","0","cg21885317","1.0","0","0.0","c"
+"1.6666666666666667","0.0","0.6","0.0","1","2","cg22344793","false","cg22344793","cg22344793","3.0","0","1","0","0.7777777777777777","false","0","cg22344793","1.0","0","0.0","c"
