@@ -1,0 +1,76 @@
+samples	tissue	patient	subtype	gender	ajcc_pathologic_stage	race
+TCGA-22-4593-01A-21	Primary Tumor	TCGA-22-4593	LUSC	male	Stage IIA	white
+TCGA-85-6560-01A-11	Primary Tumor	TCGA-85-6560	LUSC	male	Stage IIA	white
+TCGA-22-5474-01A-01	Primary Tumor	TCGA-22-5474	LUSC	male	Stage IB	white
+TCGA-39-5031-01A-01	Primary Tumor	TCGA-39-5031	LUSC	female	Stage IA	not reported
+TCGA-34-5928-01A-11	Primary Tumor	TCGA-34-5928	LUSC	female	Stage IIB	white
+TCGA-39-5030-01A-01	Primary Tumor	TCGA-39-5030	LUSC	female	Stage IIIA	asian
+TCGA-22-4613-01A-01	Primary Tumor	TCGA-22-4613	LUSC	female	Stage IA	white
+TCGA-18-5592-01A-01	Primary Tumor	TCGA-18-5592	LUSC	male	Stage IIB	not reported
+TCGA-39-5037-01A-01	Primary Tumor	TCGA-39-5037	LUSC	male	Stage IIA	white
+TCGA-85-6175-01A-11	Primary Tumor	TCGA-85-6175	LUSC	female	Stage IIB	white
+TCGA-43-6770-01A-11	Primary Tumor	TCGA-43-6770	LUSC	female	Stage IB	black or african american
+TCGA-22-5480-01A-01	Primary Tumor	TCGA-22-5480	LUSC	female	Stage IA	white
+TCGA-22-5485-01A-01	Primary Tumor	TCGA-22-5485	LUSC	female	Stage IA	white
+TCGA-39-5024-01A-21	Primary Tumor	TCGA-39-5024	LUSC	female	Stage IIIA	white
+TCGA-85-6561-01A-11	Primary Tumor	TCGA-85-6561	LUSC	male	Stage IB	white
+TCGA-21-5784-01A-01	Primary Tumor	TCGA-21-5784	LUSC	female	Stage IB	white
+TCGA-22-5478-11A-11	Solid Tissue Normal	TCGA-22-5478	normal	male	Stage IB	not reported
+TCGA-22-5491-01A-01	Primary Tumor	TCGA-22-5491	LUSC	male	Stage IA	white
+TCGA-22-5492-01A-01	Primary Tumor	TCGA-22-5492	LUSC	female	Stage IIIA	not reported
+TCGA-34-5239-01A-21	Primary Tumor	TCGA-34-5239	LUSC	male	Stage IIIA	white
+TCGA-18-5595-01A-01	Primary Tumor	TCGA-18-5595	LUSC	male	Stage IB	not reported
+TCGA-60-2709-01A-21	Primary Tumor	TCGA-60-2709	LUSC	male	Stage IB	black or african american
+TCGA-39-5036-01A-01	Primary Tumor	TCGA-39-5036	LUSC	male	Stage IB	white
+TCGA-43-6647-01A-11	Primary Tumor	TCGA-43-6647	LUSC	female	Stage IIB	white
+TCGA-63-5131-01A-01	Primary Tumor	TCGA-63-5131	LUSC	male	Stage IIB	not reported
+TCGA-22-4601-01A-01	Primary Tumor	TCGA-22-4601	LUSC	female	Stage IIIA	white
+TCGA-22-5478-01A-01	Primary Tumor	TCGA-22-5478	LUSC	male	Stage IB	not reported
+TCGA-34-5236-01A-21	Primary Tumor	TCGA-34-5236	LUSC	male	Stage IIB	white
+TCGA-34-5234-01A-01	Primary Tumor	TCGA-34-5234	LUSC	female	Stage IA	white
+TCGA-39-5029-01A-01	Primary Tumor	TCGA-39-5029	LUSC	male	Stage IIIA	white
+TCGA-33-4586-01A-01	Primary Tumor	TCGA-33-4586	LUSC	male	Stage IIIA	white
+TCGA-46-6025-01A-11	Primary Tumor	TCGA-46-6025	LUSC	male	Stage IIB	white
+TCGA-70-6723-01A-11	Primary Tumor	TCGA-70-6723	LUSC	male	Stage IIA	asian
+TCGA-18-4721-01A-01	Primary Tumor	TCGA-18-4721	LUSC	male	Stage IA	white
+TCGA-34-5927-01A-11	Primary Tumor	TCGA-34-5927	LUSC	female	Stage IA	white
+TCGA-33-4582-01A-01	Primary Tumor	TCGA-33-4582	LUSC	male	Stage IA	white
+TCGA-39-5019-01A-01	Primary Tumor	TCGA-39-5019	LUSC	male	Stage IB	white
+TCGA-21-5786-01A-01	Primary Tumor	TCGA-21-5786	LUSC	male	Stage IB	white
+TCGA-37-5819-01A-01	Primary Tumor	TCGA-37-5819	LUSC	male	Stage IIIA	white
+TCGA-34-5241-01A-01	Primary Tumor	TCGA-34-5241	LUSC	male	Stage IB	white
+TCGA-56-5898-01A-11	Primary Tumor	TCGA-56-5898	LUSC	male	Stage IA	white
+TCGA-39-5022-01A-21	Primary Tumor	TCGA-39-5022	LUSC	male	Stage IB	white
+TCGA-56-5897-01A-11	Primary Tumor	TCGA-56-5897	LUSC	male	Stage IA	white
+TCGA-22-5477-01A-01	Primary Tumor	TCGA-22-5477	LUSC	male	Stage IA	white
+TCGA-39-5028-01A-01	Primary Tumor	TCGA-39-5028	LUSC	male	Stage IIIA	white
+TCGA-63-5128-01A-01	Primary Tumor	TCGA-63-5128	LUSC	male	Stage IB	not reported
+TCGA-22-5482-01A-01	Primary Tumor	TCGA-22-5482	LUSC	male	Stage IB	white
+TCGA-39-5027-01A-21	Primary Tumor	TCGA-39-5027	LUSC	male	Stage IB	white
+TCGA-63-6202-01A-11	Primary Tumor	TCGA-63-6202	LUSC	male	Stage IIA	not reported
+TCGA-34-5929-01A-11	Primary Tumor	TCGA-34-5929	LUSC	female	Stage IB	white
+TCGA-22-5473-01A-01	Primary Tumor	TCGA-22-5473	LUSC	male	NA	white
+TCGA-34-5231-01A-21	Primary Tumor	TCGA-34-5231	LUSC	male	Stage IA	white
+TCGA-33-4566-01A-01	Primary Tumor	TCGA-33-4566	LUSC	male	Stage IB	white
+TCGA-56-6545-01A-11	Primary Tumor	TCGA-56-6545	LUSC	female	Stage IB	white
+TCGA-22-5471-01A-01	Primary Tumor	TCGA-22-5471	LUSC	male	Stage IB	white
+TCGA-22-5472-11A-11	Solid Tissue Normal	TCGA-22-5472	normal	male	Stage IB	white
+TCGA-22-5472-01A-01	Primary Tumor	TCGA-22-5472	LUSC	male	Stage IB	white
+TCGA-70-6722-01A-11	Primary Tumor	TCGA-70-6722	LUSC	male	Stage IIIA	asian
+TCGA-33-4583-01A-01	Primary Tumor	TCGA-33-4583	LUSC	male	Stage IA	white
+TCGA-39-5021-01A-01	Primary Tumor	TCGA-39-5021	LUSC	male	Stage IB	white
+TCGA-34-5240-01A-01	Primary Tumor	TCGA-34-5240	LUSC	female	Stage IIB	white
+TCGA-43-6771-01A-11	Primary Tumor	TCGA-43-6771	LUSC	male	Stage IB	white
+TCGA-43-6771-11A-01	Solid Tissue Normal	TCGA-43-6771	normal	male	Stage IB	white
+TCGA-33-6737-01A-11	Primary Tumor	TCGA-33-6737	LUSC	male	Stage IIIA	white
+TCGA-34-5232-01A-21	Primary Tumor	TCGA-34-5232	LUSC	female	Stage IIA	black or african american
+TCGA-21-5787-01A-01	Primary Tumor	TCGA-21-5787	LUSC	male	Stage IIIA	black or african american
+TCGA-22-5489-01A-01	Primary Tumor	TCGA-22-5489	LUSC	male	Stage IA	white
+TCGA-46-6026-01A-11	Primary Tumor	TCGA-46-6026	LUSC	male	Stage IIB	white
+TCGA-18-3417-01A-01	Primary Tumor	TCGA-18-3417	LUSC	male	Stage IV	not reported
+TCGA-39-5039-01A-01	Primary Tumor	TCGA-39-5039	LUSC	male	Stage IIA	white
+TCGA-39-5035-01A-01	Primary Tumor	TCGA-39-5035	LUSC	female	Stage IA	white
+TCGA-21-5782-01A-01	Primary Tumor	TCGA-21-5782	LUSC	female	Stage IB	white
+TCGA-43-5668-01A-01	Primary Tumor	TCGA-43-5668	LUSC	male	Stage IIA	white
+TCGA-43-6143-01A-11	Primary Tumor	TCGA-43-6143	LUSC	male	Stage IB	white
+TCGA-56-6546-01A-11	Primary Tumor	TCGA-56-6546	LUSC	male	Stage IIA	white
