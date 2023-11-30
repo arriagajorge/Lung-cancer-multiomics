@@ -117,7 +117,8 @@ venn.diagram(x=list(
 clin <- GDCquery_clinic("TCGA-LUAD","clinical")
 #change tumor_stage by ajcc_pathologic_stage 
 clin <- clin[,c("bcr_patient_barcode","gender",
-                "ajcc_pathologic_stage","race","vital_status")]
+                "ajcc_pathologic_stage","race","vital_status","days_to_death")]
+write.table(clin,"clinLUAD.tsv",sep='\t',quote=F,row.names=F)
 samples_2=cbind(samples_2,t(sapply(samples_2$patient,function(x) 
   clin[clin$bcr_patient_barcode==x,2:4])))
 table(clin$gender) 
