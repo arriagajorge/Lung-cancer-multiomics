@@ -129,8 +129,37 @@ result_df <- data.frame()
 
 # Print the result
 print(result_df)
-
 colnames(result_df) <- c("ENST_ID", "external_gene_name")
+
+# Add the "main_gene_of_the_network" column
+add_main_gene_column <- function(df) {
+  df %>%
+    mutate(
+      network_main_gen = case_when(
+        external_gene_name %in% c("ZNF334", "FLT3") ~ "mir-125b-2",
+        external_gene_name %in% c("ARHGDIG", "KCNB1", "H2BC3", "C8orf76") ~ "mir-199a-2",
+        external_gene_name %in% c("SCGB3A1", "GPR27", "GAL3ST2", "ZNF542P") ~ "CAPN2",
+        external_gene_name %in% c("BCOR", "TBXAS1") ~ "LRP1",
+        external_gene_name == "SRCIN1" ~ "RPS6",
+        external_gene_name %in% c("TCEA3", "MYADML", "GMDS") ~ "RPS18",
+        external_gene_name %in% c("PNMA8A", "COL6A6", "ZFHX4") ~ "EIF4G1",
+        external_gene_name == "PLPPR3" ~ "EIF4G1/ACTB",
+        external_gene_name == "KRT7" ~ "SDC1",
+        external_gene_name == "TRIO" ~ "LRP1/DST",
+        external_gene_name == "SFMBT1" ~ "DST",
+        TRUE ~ NA_character_
+      )
+    )
+}
+
+result_df$main_gene_of_the_network <- NULL
+# Add the "main_gene_of_the_network" column
+result_df <- add_main_gene_column(result_df)
+
+# Print the updated result
+print(result_df)
+
+result_df <- as.data.frame(result_df)
 #########################################################
 #### MERGE CpG SITES WITH PROMOTERS & ENHANCERS DATABASE#
 #########################################################
@@ -140,7 +169,7 @@ ensembl_CpGsites <- result_df %>%
 
 ensembl_CpGsites$ENST <- NULL
 
-colnames(ensembl_CpGsites) <- c("ENST_ID", "external_CpG_name", "seqnames", "start", "end", "width", "strand", "type")
+colnames(ensembl_CpGsites) <- c("CpG_ENST_ID", "external_CpG_name", "network_main_gene", "CpG_seqnames", "CpG_start", "CpG_end", "CpG_width", "strand", "type")
 
 write.table(ensembl_CpGsites, "ensembl_CpGsites.tsv", sep = "\t", quote = FALSE, row.names = FALSE)
 
