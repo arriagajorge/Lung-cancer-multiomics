@@ -11,7 +11,7 @@
 In each folder you will find the instructions to execute the respective scripts.
 
 
-#Methods used in the multiomics analysis 
+**Methods used in the multiomics analysis**
 
 #PrepoData
 
