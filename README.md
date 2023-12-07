@@ -136,8 +136,7 @@ The KS test is used in the script to compare the distribution of Mutual Informat
 3. Cytoscape Integration:
 Integrates with Cytoscape using RCy3 for creating and visualizing networks.
 
-#Logistic regression
+#Cox model
 
-1. Logistic regression: 
-In the context of the given R script, logistic regression is employed for analyzing survival data, where the binary outcome is whether a patient is alive (coded as 1) or not (coded as 0).
+1. The Cox proportional hazards model is employed to quantify the relationship between gene expressions and the risk of death, while the risk proportionality test evaluates the assumption that the hazards are proportional over time.
 
